@@ -1,0 +1,35 @@
+/* Defines a variable */
+body {
+  /* Defines a function */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Imports the function */
+  background-color: #6fd8b5;
+  /* Imports the variable */
+}
+
+header h1 {
+  color: #9345b8;
+}
+
+header h1:hover {
+  color: #000000;
+}
+
+/* Imports the header file */
+main h2 {
+  color: #ce3125;
+}
+
+main h2:hover {
+  color: #ffffff;
+}
+/*# sourceMappingURL=style.css.map */

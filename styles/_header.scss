@@ -1,0 +1,8 @@
+header {
+    h1 {
+        color: $headerH1;
+        &:hover{
+            color: $headerH1-Hover;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+main {
+    h2 {
+        color: $headerH2;
+        &:hover {
+            color: $headerH2-Hover;
+        }
+    }
+}
