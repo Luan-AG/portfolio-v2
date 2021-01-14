@@ -1,21 +1,22 @@
-$bodyBackground: #6fd8b5; /* Defines a variable */
-$headerH1: #9345b8;
-$headerH1-Hover: #000000;
-$headerH2: #ce3125;
-$headerH2-Hover: #ffffff;
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+$bodyBackground: #F3f3f3;
+$fontColor: #3c3c3c;
+$navbar: #E3E3E3;
+$blueUnderscore:#22A0E7;
+$rubik:'Rubik', sans-serif;
 
 
-@mixin flexCenter { /* Defines a function */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-
 
 body {
-    @include flexCenter(); /* Imports the function */
-    background-color: $bodyBackground; /* Imports the variable */
+    font-family: $rubik;
 }
 
-@import "./header"; /* Imports the header file */
+@import "./header";
 @import "./main";

@@ -1,35 +1,113 @@
-/* Defines a variable */
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  /* Defines a function */
+  font-family: "Rubik", sans-serif;
+}
+
+header {
+  background-color: #E3E3E3;
+}
+
+header nav {
+  padding: 20px;
+}
+
+header nav .images-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /* Imports the function */
-  background-color: #6fd8b5;
-  /* Imports the variable */
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-header h1 {
-  color: #9345b8;
+header nav .images-nav .logo {
+  height: 22px;
+  margin: auto 5px;
 }
 
-header h1:hover {
-  color: #000000;
+header nav .images-nav .hamburger div {
+  width: 25px;
+  height: 2px;
+  background-color: #3c3c3c;
+  margin: 5px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
-/* Imports the header file */
-main h2 {
-  color: #ce3125;
+header nav .images-nav .hamburger-active .line1 {
+  -webkit-transform: rotate(-45deg) translate(-4px, 6px);
+          transform: rotate(-45deg) translate(-4px, 6px);
 }
 
-main h2:hover {
-  color: #ffffff;
+header nav .images-nav .hamburger-active .line2 {
+  opacity: 0;
+}
+
+header nav .images-nav .hamburger-active .line3 {
+  -webkit-transform: rotate(45deg) translate(-4px, -6px);
+          transform: rotate(45deg) translate(-4px, -6px);
+}
+
+header .menu-dropdown {
+  height: 0px;
+  /* height = 250px to show the menu */
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  top: 60px;
+  background-color: #E3E3E3;
+  overflow: hidden;
+  /* hide dropdown content when height = 0px */
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+header .menu-dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+}
+
+header .menu-dropdown ul li {
+  text-align: center;
+  margin: 30px;
+}
+
+header .menu-dropdown ul .social-icons {
+  width: 50%;
+  margin: auto;
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+header .menu-dropdown ul .social-icons .linkedin-icon, header .menu-dropdown ul .social-icons .github-icon {
+  width: 20px;
+}
+
+header .menu-dropdown ul .social-icons .resume-icon {
+  height: 20px;
+}
+
+header .menu-active {
+  height: 300px;
+  /* height = 250px to show the menu */
+}
+
+main {
+  margin-top: 200px;
 }
 /*# sourceMappingURL=style.css.map */
