@@ -16,7 +16,16 @@ $rubik:'Rubik', sans-serif;
 
 body {
     font-family: $rubik;
+    background-color: $bodyBackground;
+}
+
+main {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: -1;
 }
 
 @import "./header";
-@import "./main";
+@import "./section-about";

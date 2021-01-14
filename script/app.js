@@ -1,4 +1,4 @@
-//------------------MENU OVERLAY EFFECT---------------------------------
+//------------------Menu Dropdown---------------------------------
 
 const dropdownMenu = () => {
     const burger = document.querySelector(".hamburger");
