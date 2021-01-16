@@ -12,4 +12,15 @@ const dropdownMenu = () => {
 
 }
 
+const aboutSection = () => {
+    const logo = document.querySelector(".logo");
+    const content = document.querySelector('.section-about');
+    
+    logo.addEventListener("click", () => {
+        content.classList.toggle('section-in');
+    })
+
+}
+
 dropdownMenu();
+aboutSection();

@@ -1,12 +1,19 @@
-#section-about {
-    height: 100vh;
-    padding: 0 25px 40px 25px;
+.section-about {
+    height: 100% ;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    padding: 0 0 40px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-
-    
+    transition: 0.8s ease;
+    transform: translate(100vw);
+      
     img {
         width: 220px;
         border-radius: 50%;
@@ -25,6 +32,7 @@
     p {
         text-align: center;
         line-height: 1.5;
+        padding: 0 25px;
     }
 
     a {
@@ -38,4 +46,8 @@
             color: #fff
         }
     }
+}
+
+.section-in {
+    transform: translate(0vw);
 }

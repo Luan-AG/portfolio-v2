@@ -29,5 +29,10 @@ main {
     z-index: -1;
 }
 
+.underscore {
+    background-image: url(../images/underscore.svg); 
+}
+
 @import "./header";
 @import "./section-about";
+@import "./section-skills";
