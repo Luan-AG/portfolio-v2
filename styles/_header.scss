@@ -14,12 +14,17 @@ header {
                 margin: auto 5px;
             }
     
-            .hamburger div {
-                width: 25px;
-                height: 2px;
-                background-color: $fontColor;
-                margin: 5px;
-                transition: 0.3s ease;
+            .hamburger {
+                a {
+                    -webkit-tap-highlight-color: rgba(0,0,0,0);
+                }
+                div {
+                    width: 25px;
+                    height: 2px;
+                    background-color: $fontColor;
+                    margin: 5px;
+                    transition: 0.4s ease;
+                }
             }
 
             .hamburger-active .line1 {
