@@ -80,13 +80,10 @@ header {
                 display: flex;
                 justify-content: space-evenly;
 
-                .linkedin-icon, .github-icon {
-                    width: 20px;
-                }
-
-                .resume-icon {
+                .linkedin-icon, .github-icon, .resume-icon{
                     height: 20px;
                 }
+
             }
         }
     }

@@ -115,11 +115,7 @@ header .menu-dropdown ul .social-icons {
           justify-content: space-evenly;
 }
 
-header .menu-dropdown ul .social-icons .linkedin-icon, header .menu-dropdown ul .social-icons .github-icon {
-  width: 20px;
-}
-
-header .menu-dropdown ul .social-icons .resume-icon {
+header .menu-dropdown ul .social-icons .linkedin-icon, header .menu-dropdown ul .social-icons .github-icon, header .menu-dropdown ul .social-icons .resume-icon {
   height: 20px;
 }
 
