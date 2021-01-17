@@ -1,0 +1,83 @@
+.section-contact {
+    height: 100% ;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    padding: 100px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    transition: 0.8s ease;
+    transform: translate(0vw);
+
+    .form-container {
+        margin-top: 50px;
+        height: auto;
+        width: 70%;
+        background-color: $navbar;
+        border-radius: 10px;
+        padding: 20px 0;
+        
+
+        form {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+
+            label {
+                padding: 0 0 10px 0;
+            }
+
+            input {
+                height: 30px;
+                margin: 0 0 20px 0;
+                outline-style: none;
+                font-size: 14px;
+                font-family: $rubik;
+                border-radius: 5px;
+                background-color: $bodyBackground;
+                border: none;
+                padding: 0 10px;
+                
+            }
+
+            textarea {
+                margin: 0 0 20px 0;
+                background-color: $bodyBackground;
+                border-radius: 5px;
+                outline-style: none;
+                border: none;
+                font-family: $rubik;
+                font-size: 14px;
+                padding: 5px 10px;
+            }
+
+            button {
+                border: none;
+                border-radius: 5px;
+                color: #f5f5f5;
+                font-size: 16px;
+                font-family: $rubik;
+                width: 50%;
+                margin: auto;
+                height: 40px;
+                background-color: $blueUnderscore;
+                &:hover {
+                    background-color: $blueHover;
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+
+
+
+
+}

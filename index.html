@@ -60,13 +60,29 @@
                 <img src="images/js_traversy.jpg" alt="Responsive design certificate">
             </div>
         </section>
+
         <section class="section-work">
             <p>These are some of my latest <span class="underscore">works:</span></p>
             <div class="swiper-container">
                 1
             </div>
         </section>
-        <section class="section-contact"></section>
+
+        <section class="section-contact">
+            <p>Let's work together? <span class="underscore">Contact me:</span></p>
+            <div class="form-container">
+                <form action="POST" class="contact-form">
+                    <input type="hidden" name="_gotcha">
+                    <label id="label-fullname" for="name">Name/Company:</label>
+                    <input name="name" type="text"  class="form-control" id="fullname" required>
+                    <label id="label-email" for="email">E-mail:</label>
+                    <input name="email" type="email" class="form-control" id="email" required>
+                    <label id="label-email" for="message">Message:</label>
+                    <textarea name="message" rows="8" name="menssagem" class="form-control" id="message"></textarea>
+                    <button type="submit" class="form-btn">Send</button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <script src="script/app.js"></script>
