@@ -13,6 +13,18 @@ const dropdownMenu = () => {
 }
 dropdownMenu();
 
+//------------------Confirmation for download--------------------------
+
+function download() {
+    if (confirm ('Download file?')) {
+        location.href = 'yourfile.pdf';
+    }
+
+    return false;
+}
+
+
+
 //------------------Toggle Sections---------------------------------
 
 const toggleSections = () => {
@@ -22,6 +34,7 @@ const toggleSections = () => {
     const workBtn = document.querySelector('.work-btn');
     const contactBtn = document.querySelector('.contact-btn');
     const logoBtn = document.querySelector('.logo');
+    const contactMe = document.querySelector('.contact-me');
     //menu dropdown
     const burger = document.querySelector(".hamburger");
     const contentMenu = document.querySelector('.menu-dropdown');
@@ -156,6 +169,19 @@ const toggleSections = () => {
         } else {
             burger.classList.toggle('hamburger-active');
             contentMenu.classList.toggle('menu-active');
+        }
+    })
+
+    contactMe.addEventListener("click", () => {
+        if(contentContact.classList.contains('section-in') === false) {
+            contentContact.classList.toggle('section-out');
+            contentContact.classList.toggle('section-in');
+            contentAbout.classList.toggle('section-out');
+            contentAbout.classList.toggle('section-in');
+            if (contentMenu.classList.contains('menu-active') === true) {
+                burger.classList.toggle('hamburger-active');
+                contentMenu.classList.toggle('menu-active');
+            }
         }
     })
 
