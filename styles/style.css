@@ -97,6 +97,16 @@ header .menu-dropdown {
 }
 
 header .menu-dropdown ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -105,13 +115,18 @@ header .menu-dropdown ul {
 
 header .menu-dropdown ul li {
   text-align: center;
-  margin: 30px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+header .menu-dropdown ul li:hover {
+  color: #0090e4;
 }
 
 header .menu-dropdown ul .social-icons {
   width: 50%;
   margin: auto;
-  padding-top: 10px;
+  padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
