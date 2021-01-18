@@ -150,10 +150,13 @@ header .menu-active {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-transition: 0.8s ease;
-  transition: 0.8s ease;
+  -webkit-transition: -webkit-transform 0.8s ease;
+  transition: -webkit-transform 0.8s ease;
+  transition: transform 0.8s ease;
+  transition: transform 0.8s ease, -webkit-transform 0.8s ease;
   -webkit-transform: translate(100vw);
           transform: translate(100vw);
+  opacity: 0;
 }
 
 .section-about img {
@@ -190,11 +193,6 @@ header .menu-active {
   color: #fff;
 }
 
-.section-in {
-  -webkit-transform: translate(0vw);
-          transform: translate(0vw);
-}
-
 .section-skills {
   height: 100%;
   width: 100%;
@@ -217,10 +215,13 @@ header .menu-active {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-transition: 0.8s ease;
-  transition: 0.8s ease;
+  -webkit-transition: -webkit-transform 0.8s ease;
+  transition: -webkit-transform 0.8s ease;
+  transition: transform 0.8s ease;
+  transition: transform 0.8s ease, -webkit-transform 0.8s ease;
   -webkit-transform: translate(100vw);
           transform: translate(100vw);
+  opacity: 0;
 }
 
 .section-skills p {
@@ -273,10 +274,13 @@ header .menu-active {
       -ms-flex-align: center;
           align-items: center;
   /* justify-content: space-evenly; */
-  -webkit-transition: 0.8s ease;
-  transition: 0.8s ease;
+  -webkit-transition: -webkit-transform 0.8s ease;
+  transition: -webkit-transform 0.8s ease;
+  transition: transform 0.8s ease;
+  transition: transform 0.8s ease, -webkit-transform 0.8s ease;
   -webkit-transform: translate(100vw);
           transform: translate(100vw);
+  opacity: 0;
 }
 
 .section-work .swiper-container {
@@ -307,16 +311,19 @@ header .menu-active {
       -ms-flex-align: center;
           align-items: center;
   /* justify-content: center; */
-  -webkit-transition: 0.8s ease;
-  transition: 0.8s ease;
-  -webkit-transform: translate(0vw);
-          transform: translate(0vw);
+  -webkit-transition: -webkit-transform 0.8s ease;
+  transition: -webkit-transform 0.8s ease;
+  transition: transform 0.8s ease;
+  transition: transform 0.8s ease, -webkit-transform 0.8s ease;
+  -webkit-transform: translate(100vw);
+          transform: translate(100vw);
+  opacity: 0;
 }
 
 .section-contact .form-container {
   margin-top: 50px;
   height: auto;
-  width: 70%;
+  width: 80%;
   background-color: #E3E3E3;
   border-radius: 10px;
   padding: 20px 0;
@@ -379,5 +386,14 @@ header .menu-active {
 .section-contact .form-container form button:hover {
   background-color: #0090e4;
   cursor: pointer;
+}
+
+.section-in {
+  -webkit-transform: translate(0vw);
+          transform: translate(0vw);
+}
+
+.section-out {
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */

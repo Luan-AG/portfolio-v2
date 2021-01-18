@@ -2,25 +2,127 @@
 
 const dropdownMenu = () => {
     const burger = document.querySelector(".hamburger");
-    const content = document.querySelector('.menu-dropdown');
+    const contentMenu = document.querySelector('.menu-dropdown');
     
     burger.addEventListener("click", () => {
         burger.classList.toggle('hamburger-active');
-        content.classList.toggle('menu-active');
+        contentMenu.classList.toggle('menu-active');
       
     })
 
 }
+dropdownMenu();
 
-const aboutSection = () => {
-    const logo = document.querySelector(".logo");
-    const content = document.querySelector('.section-about');
+//------------------Toggle Sections---------------------------------
+
+const toggleSections = () => {
+    //buttons
+    const aboutBtn = document.querySelector(".about-btn");
+    const skillsBtn = document.querySelector('.skills-btn');
+    const workBtn = document.querySelector('.work-btn');
+    const contactBtn = document.querySelector('.contact-btn');
+    //menu dropdown
+    const burger = document.querySelector(".hamburger");
+    const contentMenu = document.querySelector('.menu-dropdown');
+    //sections
+    const contentAbout = document.querySelector('.section-about');
+    const contentSkills = document.querySelector('.section-skills');
+    const contentWork = document.querySelector('.section-work');
+    const contentContact = document.querySelector('.section-contact');
+
+    aboutBtn.addEventListener("click", () => {
+        if(contentAbout.classList.contains('section-in') === false) {
+            contentAbout.classList.toggle('section-out');
+            contentAbout.classList.toggle('section-in');
+            burger.classList.toggle('hamburger-active');
+            contentMenu.classList.toggle('menu-active');
+
+            if(contentSkills.classList.contains('section-in') === true) {
+                contentSkills.classList.toggle('section-out');
+                contentSkills.classList.toggle('section-in');            
+            } else if (contentWork.classList.contains('section-in') === true) {
+                contentWork.classList.toggle('section-out');
+                contentWork.classList.toggle('section-in');
+            } else if (contentContact.classList.contains('section-in') === true) {
+                contentContact.classList.toggle('section-out');
+                contentContact.classList.toggle('section-in');
+            }
+        } else {
+            burger.classList.toggle('hamburger-active');
+            contentMenu.classList.toggle('menu-active');
+        }
+
+    })
     
-    logo.addEventListener("click", () => {
-        content.classList.toggle('section-in');
+    skillsBtn.addEventListener("click", () => {
+        if(contentSkills.classList.contains('section-in') === false) {
+            contentSkills.classList.toggle('section-out');
+            contentSkills.classList.toggle('section-in');
+            burger.classList.toggle('hamburger-active');
+            contentMenu.classList.toggle('menu-active');
+            
+            if(contentAbout.classList.contains('section-in') === true) {
+                contentAbout.classList.toggle('section-out');
+                contentAbout.classList.toggle('section-in');            
+            } else if (contentWork.classList.contains('section-in') === true) {
+                contentWork.classList.toggle('section-out');
+                contentWork.classList.toggle('section-in');
+            } else if (contentContact.classList.contains('section-in') === true) {
+                contentContact.classList.toggle('section-out');
+                contentContact.classList.toggle('section-in');
+            }
+        } else {
+            burger.classList.toggle('hamburger-active');
+            contentMenu.classList.toggle('menu-active');
+        }
+        
+    })
+
+    workBtn.addEventListener("click", () => {
+        if(contentWork.classList.contains('section-in') === false) {
+            contentWork.classList.toggle('section-out');
+            contentWork.classList.toggle('section-in');
+            burger.classList.toggle('hamburger-active');
+            contentMenu.classList.toggle('menu-active');
+            if(contentSkills.classList.contains('section-in') === true) {
+                contentSkills.classList.toggle('section-out');
+                contentSkills.classList.toggle('section-in');            
+            } else if (contentAbout.classList.contains('section-in') === true) {
+                contentAbout.classList.toggle('section-out');
+                contentAbout.classList.toggle('section-in');
+            } else if (contentContact.classList.contains('section-in') === true) {
+                contentContact.classList.toggle('section-out');
+                contentContact.classList.toggle('section-in');
+            }
+        } else {
+            burger.classList.toggle('hamburger-active');
+            contentMenu.classList.toggle('menu-active');
+        }
+    })
+
+    contactBtn.addEventListener("click", () => {
+        if(contentContact.classList.contains('section-in') === false) {
+            contentContact.classList.toggle('section-out');
+            contentContact.classList.toggle('section-in');
+            burger.classList.toggle('hamburger-active');
+            contentMenu.classList.toggle('menu-active');
+            if(contentSkills.classList.contains('section-in') === true) {
+                contentSkills.classList.toggle('section-out');
+                contentSkills.classList.toggle('section-in');            
+            } else if (contentWork.classList.contains('section-in') === true) {
+                contentWork.classList.toggle('section-out');
+                contentWork.classList.toggle('section-in');
+            } else if (contentAbout.classList.contains('section-in') === true) {
+                contentAbout.classList.toggle('section-out');
+                contentAbout.classList.toggle('section-in');
+            }
+        } else {
+            burger.classList.toggle('hamburger-active');
+            contentMenu.classList.toggle('menu-active');
+        }
     })
 
 }
 
-dropdownMenu();
-aboutSection();
+toggleSections();
+

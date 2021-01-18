@@ -38,3 +38,12 @@ main {
 @import "./section-skills";
 @import "./section-work";
 @import "./section-contact";
+
+.section-in {
+    transform: translate(0vw);
+}
+
+.section-out {
+    opacity:1;
+}
+
