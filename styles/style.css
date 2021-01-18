@@ -46,6 +46,7 @@ header nav .images-nav {
 header nav .images-nav .logo {
   height: 22px;
   margin: auto 5px;
+  cursor: pointer;
 }
 
 header nav .images-nav .hamburger a {

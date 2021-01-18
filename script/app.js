@@ -38,14 +38,31 @@ const toggleSections = () => {
             
             if(contentSkills.classList.contains('section-in') === true) {
                 contentSkills.classList.toggle('section-out');
-                contentSkills.classList.toggle('section-in');            
+                contentSkills.classList.toggle('section-in'); 
+                if (contentMenu.classList.contains('menu-active') === true) {
+                    burger.classList.toggle('hamburger-active');
+                    contentMenu.classList.toggle('menu-active');
+                }           
             } else if (contentWork.classList.contains('section-in') === true) {
                 contentWork.classList.toggle('section-out');
                 contentWork.classList.toggle('section-in');
+                if (contentMenu.classList.contains('menu-active') === true) {
+                    burger.classList.toggle('hamburger-active');
+                    contentMenu.classList.toggle('menu-active');
+                }
             } else if (contentContact.classList.contains('section-in') === true) {
                 contentContact.classList.toggle('section-out');
                 contentContact.classList.toggle('section-in');
-            }
+                if (contentMenu.classList.contains('menu-active') === true) {
+                    burger.classList.toggle('hamburger-active');
+                    contentMenu.classList.toggle('menu-active');
+                }
+            } 
+        
+            
+        } else if (contentMenu.classList.contains('menu-active')) {
+            burger.classList.toggle('hamburger-active');
+            contentMenu.classList.toggle('menu-active');
         }
 
     })
