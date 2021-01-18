@@ -21,6 +21,7 @@ const toggleSections = () => {
     const skillsBtn = document.querySelector('.skills-btn');
     const workBtn = document.querySelector('.work-btn');
     const contactBtn = document.querySelector('.contact-btn');
+    const logoBtn = document.querySelector('.logo');
     //menu dropdown
     const burger = document.querySelector(".hamburger");
     const contentMenu = document.querySelector('.menu-dropdown');
@@ -29,6 +30,25 @@ const toggleSections = () => {
     const contentSkills = document.querySelector('.section-skills');
     const contentWork = document.querySelector('.section-work');
     const contentContact = document.querySelector('.section-contact');
+
+    logoBtn.addEventListener("click", () => {
+        if(contentAbout.classList.contains('section-in') === false) {
+            contentAbout.classList.toggle('section-out');
+            contentAbout.classList.toggle('section-in');
+            
+            if(contentSkills.classList.contains('section-in') === true) {
+                contentSkills.classList.toggle('section-out');
+                contentSkills.classList.toggle('section-in');            
+            } else if (contentWork.classList.contains('section-in') === true) {
+                contentWork.classList.toggle('section-out');
+                contentWork.classList.toggle('section-in');
+            } else if (contentContact.classList.contains('section-in') === true) {
+                contentContact.classList.toggle('section-out');
+                contentContact.classList.toggle('section-in');
+            }
+        }
+
+    })
 
     aboutBtn.addEventListener("click", () => {
         if(contentAbout.classList.contains('section-in') === false) {
