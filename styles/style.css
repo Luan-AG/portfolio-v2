@@ -114,12 +114,17 @@ header .menu-dropdown ul {
 }
 
 header .menu-dropdown ul li {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   text-align: center;
   margin: 20px;
   cursor: pointer;
 }
 
 header .menu-dropdown ul li:hover {
+  color: #0090e4;
+}
+
+header .menu-dropdown ul li:active {
   color: #0090e4;
 }
 
