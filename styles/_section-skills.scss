@@ -4,13 +4,12 @@
     position: fixed;
     z-index: 1;
     right: 0;
-    top: 0;
+    top: 66px;
     overflow: hidden;
-    padding: 20px 0 40px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     transition: transform 0.8s ease;
     transform: translate(100vw);
     opacity: 0;
@@ -19,9 +18,11 @@
         text-align: center;
         line-height: 1.5;
         padding: 0 25px;
+        margin: 20px 0px;
     }
     
     .tech-logos {
+        padding: 30px 0px;
         width: 80%;
         display: flex;
         align-items: center;
@@ -34,9 +35,10 @@
     }
 
     .certificates {
-
+        padding: 30px 0px;
+        
         img {
-            height: 75px;
+            height: 100px;
         }
     }
 }
