@@ -1,5 +1,5 @@
 .section-work {
-    height: 100% ;
+    height: calc(100% - #{$navheight});
     width: 100%;
     position: fixed;
     z-index: 1;
@@ -9,21 +9,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
     transition: transform 0.8s ease;
-    transform:  translate(100vw);
+    transform: translate(100vw);
     opacity: 0;
 
     p {
-        margin: 20px 0px;
+        margin: 0px 0px;
     }
 
     .swiper-container {
-        height: 470px;
-        width: 70%;
+        height: 70%;
+        width: 75%;
         max-width: 650px;
         background-color: rgb(88, 88, 88);
         border-radius: 10px;
+        margin-bottom: 30px;
     }
 
 }

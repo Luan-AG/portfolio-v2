@@ -1,5 +1,5 @@
 .section-contact {
-    height: 100% ;
+    height: calc(100% - #{$navheight});
     width: 100%;
     position: fixed;
     z-index: 1;
@@ -9,25 +9,28 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: space-evenly;
     transition: transform 0.8s ease;
-    transform:  translate(100vw);
+    transform: translate(100vw);
     opacity: 0;
 
     p {
-        margin: 20px 0px;
+        margin: 0px 0px;
     }
 
     .form-container {
-        height: 470px;
+        height: 70%;
+        /* max-height: 500px; */
         width: 80%;
-        max-width: 650px;
+        max-width: 500px;
         background-color: $navbar;
         border-radius: 10px;
         padding: 20px 0;
+        margin-bottom: 30px;
         
 
         form {
+            height: 100%;
             width: 80%;
             margin: auto;
             display: flex;
@@ -35,12 +38,13 @@
             align-items: left;
 
             label {
+                font-size: 14px;
                 padding: 0 0 10px 0;
             }
 
             input {
-                height: 30px;
-                margin: 0 0 20px 0;
+                min-height: 25px;
+                margin: 0 0 10px 0;
                 outline-style: none;
                 font-size: 14px;
                 font-family: $rubik;
@@ -52,6 +56,8 @@
             }
 
             textarea {
+                min-height: 100px;
+                max-height: 500px;
                 margin: 0 0 20px 0;
                 background-color: $bodyBackground;
                 border-radius: 5px;
@@ -69,6 +75,7 @@
                 font-size: 16px;
                 font-family: $rubik;
                 width: 50%;
+                max-width: 200px;
                 margin: auto;
                 height: 40px;
                 background-color: $blueUnderscore;
