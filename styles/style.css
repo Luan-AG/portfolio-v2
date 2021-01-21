@@ -129,7 +129,7 @@ header .menu-dropdown ul li:active {
 }
 
 header .menu-dropdown ul .social-icons {
-  width: 50%;
+  width: 100px;
   margin: auto;
   padding-top: 20px;
   display: -webkit-box;
@@ -313,12 +313,33 @@ header .menu-active {
 }
 
 .section-work .swiper-container {
-  height: 70%;
-  width: 75%;
+  height: 75%;
+  width: 100%;
   max-width: 650px;
-  background-color: #585858;
+  margin-bottom: 50px;
+}
+
+.section-work .swiper-container .swiper-wrapper .swiper-slide {
+  text-align: center;
+  margin: auto;
+  width: 250px;
+  height: 75%;
+  background-color: #acabab;
   border-radius: 10px;
-  margin-bottom: 30px;
+}
+
+.section-work .swiper-container .swiper-wrapper .swiper-slide img {
+  width: 230px;
+  height: 150px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.section-work .swiper-container .swiper-wrapper .swiper-slide-active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .section-contact {

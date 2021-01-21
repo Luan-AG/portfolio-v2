@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>Luan Gonçalves</title>
 </head>
 <body>
@@ -28,7 +29,7 @@
                     <div class="social-icons">
                         <a href="https://www.linkedin.com/in/luan-archarde-gon%C3%A7alves-584ba877/" target="_blank"><img src="images/linkedin-brands.svg" alt="LinkedIn icon" class="linkedin-icon"></a>
                         <a href="https://github.com/Luan-AG" target="_blank"><img src="images/github-brands.svg" alt="Github icon" class="github-icon"></a>
-                        <a href="/images/Luan Goncalves - resume.pdf" download="Luan_Goncalves_resume"><img src="images/file-download-solid.svg" alt="Resume download icon" class="resume-icon"></a>   
+                        <!-- <a href="/images/Luan Goncalves - resume.pdf" download="Luan_Goncalves_resume"><img src="images/file-download-solid.svg" alt="Resume download icon" class="resume-icon"></a> -->   
                     </div>
                 </ul>
             </div>
@@ -64,8 +65,26 @@
         <section class="section-work">
             <p>These are my <span class="underscore">latest projects:</span></p>
             <div class="swiper-container">
-                1
-            </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">
+                        <img src="images/sky-1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <img src="images/sky-2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide slide3">
+                        <img src="images/sky-1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide slide4">
+                        <img src="images/sky-2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide slide5">
+                        <img src="images/sky-1.jpg" alt="">
+                    </div>
+                </div>
+                <!-- Bullets -->
+                <div class="swiper-pagination"></div>
+              </div>
         </section>
 
         <section class="section-contact">
@@ -84,7 +103,21 @@
             </div>
         </section>
     </main>
-
     <script src="script/app.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../package/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 'auto',
+          spaceBetween: 40,
+          centeredSlides: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+        });
+      </script>
+    
+    
 </body>
 </html>
