@@ -319,6 +319,28 @@ header .menu-active {
   margin-bottom: 50px;
 }
 
+.section-work .swiper-container .swiper-wrapper {
+  /*             .slide1{
+
+            }
+
+            .slide2{
+
+            }
+
+            .slide3{
+
+            }
+
+            .slide4{
+
+            }
+
+            .slide5{
+
+            } */
+}
+
 .section-work .swiper-container .swiper-wrapper .swiper-slide {
   text-align: center;
   margin: auto;
@@ -337,8 +359,8 @@ header .menu-active {
 
 .section-work .swiper-container .swiper-wrapper .swiper-slide p {
   padding: 0 10px;
-  font-size: 14px;
-  margin-bottom: 80px;
+  font-size: 12px;
+  margin-bottom: 110px;
 }
 
 .section-work .swiper-container .swiper-wrapper .swiper-slide .btn-swiper-slide {
@@ -347,7 +369,7 @@ header .menu-active {
 }
 
 .section-work .swiper-container .swiper-wrapper .swiper-slide .btn-swiper-slide .btn-live, .section-work .swiper-container .swiper-wrapper .swiper-slide .btn-swiper-slide .btn-github {
-  font-size: 14px;
+  font-size: 12px;
   text-decoration: none;
   color: #000;
   border: 1px solid #000;
