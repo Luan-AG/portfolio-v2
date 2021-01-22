@@ -21,7 +21,7 @@
     .swiper-container {
         height: 75%;
         width: 100%;
-        max-width: 650px;
+        max-width: 850px;
         margin-bottom: 50px;
         
 
@@ -40,13 +40,47 @@
                     height: 150px;
                     margin: 10px;
                     border-radius: 5px;
-                    
                 }
+
+                p {
+                    padding: 0 10px;
+                    font-size: 14px;
+                    margin-bottom: 80px;
+                }
+
+                .btn-swiper-slide{
+                    width: 100%;
+                    height: auto;
+                    
+
+                    .btn-live, .btn-github {
+                        font-size: 14px;
+                        text-decoration: none;
+                        color: #000;
+                        border: 1px solid #000;
+                        border-radius: 3px;
+                        padding: 5px;
+                        margin: 0 5px;
+                        -webkit-tap-highlight-color: rgba(0,0,0,0);
+                        &:active {
+                            color: $blueHover;
+                            border-color: $blueHover;
+                        }
+                    }
+
+                            
+                }
+                    
+                    
+                    
+
+                    
+                
 
             }
 
             .swiper-slide-active {
-                transform: scale(1.1);
+                transform: scale(1.15);
                 transition: 0.5s;
             }
 

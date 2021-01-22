@@ -315,7 +315,7 @@ header .menu-active {
 .section-work .swiper-container {
   height: 75%;
   width: 100%;
-  max-width: 650px;
+  max-width: 850px;
   margin-bottom: 50px;
 }
 
@@ -335,9 +335,36 @@ header .menu-active {
   border-radius: 5px;
 }
 
+.section-work .swiper-container .swiper-wrapper .swiper-slide p {
+  padding: 0 10px;
+  font-size: 14px;
+  margin-bottom: 80px;
+}
+
+.section-work .swiper-container .swiper-wrapper .swiper-slide .btn-swiper-slide {
+  width: 100%;
+  height: auto;
+}
+
+.section-work .swiper-container .swiper-wrapper .swiper-slide .btn-swiper-slide .btn-live, .section-work .swiper-container .swiper-wrapper .swiper-slide .btn-swiper-slide .btn-github {
+  font-size: 14px;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 0 5px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.section-work .swiper-container .swiper-wrapper .swiper-slide .btn-swiper-slide .btn-live:active, .section-work .swiper-container .swiper-wrapper .swiper-slide .btn-swiper-slide .btn-github:active {
+  color: #0090e4;
+  border-color: #0090e4;
+}
+
 .section-work .swiper-container .swiper-wrapper .swiper-slide-active {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
