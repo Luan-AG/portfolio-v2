@@ -313,13 +313,13 @@ header .menu-active {
 }
 
 .section-work .swiper-container {
-  height: 75%;
+  height: 80%;
   width: 100%;
   /* max-width: 600px; */
   margin: auto;
   margin-bottom: 50px;
   margin-top: 0;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   /* 
         .swiper-pagination {
             margin-top: 100px;
@@ -419,8 +419,8 @@ header .menu-active {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  -webkit-transform: rotateY(180deg) scale(1.1);
-          transform: rotateY(180deg) scale(1.1);
+  -webkit-transform: rotateY(180deg) scale(1.2);
+          transform: rotateY(180deg) scale(1.2);
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-column: 1/5;
@@ -435,8 +435,8 @@ header .menu-active {
 }
 
 .section-work .swiper-container .swiper-wrapper .swiper-slide-active {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   -webkit-transition: .8s;
   transition: .8s;
   -webkit-perspective: 1000px;
