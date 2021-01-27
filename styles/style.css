@@ -183,6 +183,8 @@ header .menu-active {
   width: 220px;
   border-radius: 50%;
   justify-self: flex-start;
+  -webkit-box-shadow: 0px 0px 20px black;
+          box-shadow: 0px 0px 20px black;
 }
 
 .section-about h1 {
