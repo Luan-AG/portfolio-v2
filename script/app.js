@@ -16,13 +16,31 @@ dropdownMenu();
 //------------------Flip--------------------------
 
 function flip() {
-    btnMais6 = document.querySelector('.btn-github');
-    btnVoltar6 = document.querySelector('.btn-voltar-6 p');
+    btnMore1 = document.querySelector('.btn-read-more1');
+    btnBack1 = document.querySelector('.btn-back1');
+    btnMore2 = document.querySelector('.btn-read-more2');
+    btnBack2 = document.querySelector('.btn-back2');
+    btnMore3 = document.querySelector('.btn-read-more3');
+    btnBack3 = document.querySelector('.btn-back3');
 
-    btnMais6.addEventListener("click", function(e) {
+    btnMore1.addEventListener("click", function(e) {
         e.target.parentElement.parentElement.style.transform = 'rotateY(-180deg)';
       });
-      btnVoltar6.addEventListener("click", function(e) {
+    btnBack1.addEventListener("click", function(e) {
+        e.target.parentElement.parentElement.parentElement.style.transform = '';
+      });
+
+    btnMore2.addEventListener("click", function(e) {
+        e.target.parentElement.parentElement.style.transform = 'rotateY(-180deg)';
+      });
+    btnBack2.addEventListener("click", function(e) {
+        e.target.parentElement.parentElement.parentElement.style.transform = '';
+      });
+
+    btnMore3.addEventListener("click", function(e) {
+        e.target.parentElement.parentElement.style.transform = 'rotateY(-180deg)';
+      });
+    btnBack3.addEventListener("click", function(e) {
         e.target.parentElement.parentElement.parentElement.style.transform = '';
       });
 }
