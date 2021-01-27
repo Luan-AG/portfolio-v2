@@ -25,7 +25,7 @@ main {
 }
 
 header {
-  background-color: #E3E3E3;
+  background-color: #ababab;
   position: fixed;
   width: 100vw;
 }
@@ -89,7 +89,7 @@ header .menu-dropdown {
   z-index: 1;
   right: 0;
   top: 60px;
-  background-color: #E3E3E3;
+  background-color: #ababab;
   overflow: hidden;
   /* hide dropdown content when height = 0px */
   -webkit-transition: 0.6s;
@@ -503,7 +503,7 @@ header .menu-active {
   /* max-height: 500px; */
   width: 80%;
   max-width: 500px;
-  background-color: #E3E3E3;
+  background-color: #ababab;
   border-radius: 10px;
   padding: 20px 0;
   margin-bottom: 30px;
