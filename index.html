@@ -29,7 +29,7 @@
                     <div class="social-icons">
                         <a href="https://www.linkedin.com/in/luan-archarde-gon%C3%A7alves-584ba877/" target="_blank"><img src="images/linkedin-brands.svg" alt="LinkedIn icon" class="linkedin-icon"></a>
                         <a href="https://github.com/Luan-AG" target="_blank"><img src="images/github-brands.svg" alt="Github icon" class="github-icon"></a>
-                        <!-- <a href="/images/Luan Goncalves - resume.pdf" download="Luan_Goncalves_resume"><img src="images/file-download-solid.svg" alt="Resume download icon" class="resume-icon"></a> -->   
+                        <a href="/images/Luan Goncalves - resume.pdf" download="Luan_Goncalves_resume"><img src="images/file-download-solid.svg" alt="Resume download icon" class="resume-icon"></a>
                     </div>
                 </ul>
             </div>
@@ -37,7 +37,7 @@
     </header>
     
     <main>
-        <section class="section-about section-in section-out">
+        <section class="section-about "> <!-- section-in section-out removi enquanto trabalho no work section-->
             <img src="images/eu-cor.jpg" alt="picture of myself">
             <h1>Hi, I'm Luan!</h1>
             <p>I’m a front-end web developer currently based in Poland, I love coding sites and apps for the web. 
@@ -68,13 +68,15 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide slide1">
                         <img src="images/sky-1.jpg" alt="">
-                        <div class="content-card-swiper">
-                            <p>This is a website created with HTML, CSS and Javascript for a small translation business. It's fully responsive and I haven't used any libraries.</p>
-                            <div class="btn-swiper-slide">    
-                                <a href="#" class="btn-live">See Live</a>
-                                <a href="#" class="btn-github">Github</a>
-                            </div>
-                        </div>    
+                        <p>Hellow,<br>This is a website created with HTML,This is a website created with HTML, CSS and Javascript for a small translation business. It's fully responsive and I haven't used any libraries.</p>
+                        <div class="btn-swiper-slide">    
+                            <a href="#" class="btn-live">See Live</a>
+                            <a href="#" class="btn-github">Github</a>
+                        </div>
+                        <div class="servico-6-back">
+                            <p>This is a website created with HTML,This is a website created with HTML, CSS and Javascript for a small translation business. It's fully responsive and I haven't used any libraries.</p>
+                            <div class="btn-voltar-6"><p>VOLTAR</p></div>
+                        </div>   
                     </div>
                     <div class="swiper-slide slide2">
                         <img src="images/sky-2.jpg" alt="">
@@ -132,12 +134,13 @@
     </main>
     <script src="script/app.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="../package/swiper-bundle.min.js"></script>
+    <!-- <script src="../package/swiper-bundle.min.js"></script> -->
     <script>
         var swiper = new Swiper('.swiper-container', {
           slidesPerView: 'auto',
-          spaceBetween: 40,
+          spaceBetween: 70,
           centeredSlides: true,
+          grabCursor: true,
           pagination: {
             el: '.swiper-pagination',
             clickable: true,

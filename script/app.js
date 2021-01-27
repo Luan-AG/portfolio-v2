@@ -13,15 +13,21 @@ const dropdownMenu = () => {
 }
 dropdownMenu();
 
-//------------------Confirmation for download--------------------------
+//------------------Flip--------------------------
 
-function download() {
-    if (confirm ('Download file?')) {
-        location.href = 'yourfile.pdf';
-    }
+function flip() {
+    btnMais6 = document.querySelector('.btn-github');
+    btnVoltar6 = document.querySelector('.btn-voltar-6 p');
 
-    return false;
+    btnMais6.addEventListener("click", function(e) {
+        e.target.parentElement.parentElement.style.transform = 'rotateY(-180deg)';
+      });
+      btnVoltar6.addEventListener("click", function(e) {
+        e.target.parentElement.parentElement.parentElement.style.transform = '';
+      });
 }
+
+flip();
 
 
 
