@@ -2,6 +2,7 @@ header {
     background-color: $navbar;
     position: fixed;
     width: 100vw;
+    z-index: 24;
     
     nav {
         padding: 20px;
@@ -103,4 +104,70 @@ header {
     .menu-active {
         height: 300px; /* height = 250px to show the menu */
     }
+}
+
+.modal-download {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 25;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    transition: .3s;
+    visibility: hidden;
+    opacity: 0;
+
+    .box-download {
+
+        background-color: $navbar;
+        padding: 10px;
+        border-radius: 10px;
+        width: 80%;
+        height: 150px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly; 
+        align-items: center;
+        
+        .confirm-buttons{
+            width: 100%;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            
+            .download, .cancel {
+                background-color: $blueUnderscore;
+                width: 90px;
+                text-align: center;
+                font-size: 14px;
+                text-decoration: none;
+                color: #fff;
+                border-radius: 3px;
+                padding: 10px;
+                margin: 0 10px;
+                -webkit-tap-highlight-color: rgba(0,0,0,0);
+                &:active {
+                    color: $blueHover;
+                    border-color: $blueHover;
+                }
+            }
+
+            .cancel {
+                background-color: $fontColor;
+                
+            }
+        }
+    }
+}
+
+.download-active {
+    visibility: visible;
+    opacity: 1;
+    
 }

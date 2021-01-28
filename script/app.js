@@ -13,20 +13,59 @@ const dropdownMenu = () => {
 }
 dropdownMenu();
 
+//------------------Modal Download Resume---------------------------------
+
+const modalResume = () => {
+    const modalDownload = document.querySelector('.modal-download');
+    const fileBtn = document.querySelector('.resume-icon');
+    const cancel = document.querySelector('.cancel');
+    const download = document.querySelector('.download');
+    const burger = document.querySelector(".hamburger");
+    const contentMenu = document.querySelector('.menu-dropdown');
+    
+ 
+    fileBtn.addEventListener("click", () => {
+        modalDownload.classList.toggle('download-active');
+        burger.classList.toggle('hamburger-active');
+        contentMenu.classList.toggle('menu-active');
+    })
+
+    cancel.addEventListener("click", () => {
+        modalDownload.classList.toggle('download-active');
+    })
+
+    download.addEventListener("click", () => {
+        modalDownload.classList.toggle('download-active');
+    })
+
+}
+
+modalResume();
+
 //------------------Modal Certificates---------------------------------
 
 const modalCertif = () => {
     const modal1 = document.querySelector(".modal-1");
+    const modal2 = document.querySelector(".modal-2");
     const certif1 = document.querySelector('.certificate1');
+    const certif2 = document.querySelector('.certificate2');
     const btnClose1 = document.querySelector('.btn-close');
+    const btnClose2 = document.querySelector('.btn-close2');
     
  
     certif1.addEventListener("click", () => {
         modal1.classList.toggle('modal-active');
     })
+    certif2.addEventListener("click", () => {
+        modal2.classList.toggle('modal-active');
+    })
 
     btnClose1.addEventListener("click", () => {
         modal1.classList.toggle('modal-active');
+    })
+
+    btnClose2.addEventListener("click", () => {
+        modal2.classList.toggle('modal-active');
     })
 
 }
