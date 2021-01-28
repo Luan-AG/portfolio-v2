@@ -22,15 +22,20 @@
     
     .tech-logos {
         width: 80%;
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         align-items: center;
-        gap: 15px 0;
-        justify-content: space-evenly;
-        flex-wrap: wrap ;
+        justify-items: center;
+        gap: 20px 0;
+        
         img{
            height: 65px;
-           padding: 0px 20px;
+           padding: 0px 10px;
         }
+
+        
+
     }
 
     .certificates {
@@ -40,4 +45,45 @@
             height: 100px;
         }
     }
+
+    .modal-1{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 10;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        transition: .5s;
+        visibility: hidden;
+        opacity: 0;
+
+        .btn-close {
+            width: 25px;
+            position: fixed;
+            top: 20px;
+            right: 25px;
+        }
+
+        .photo1 {
+            width: 0vw;
+            max-width: 600px;
+            /* max-height: 90%; */
+            overflow: auto;
+            transition: .5s ;
+        }
+    }
+
+    .modal-active {
+        opacity: 1;
+        visibility: visible;
+        .photo1 {
+            width: 100vw;
+        }
+    }
+
 }
+

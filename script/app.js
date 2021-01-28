@@ -13,6 +13,26 @@ const dropdownMenu = () => {
 }
 dropdownMenu();
 
+//------------------Modal Certificates---------------------------------
+
+const modalCertif = () => {
+    const modal1 = document.querySelector(".modal-1");
+    const certif1 = document.querySelector('.certificate1');
+    const btnClose1 = document.querySelector('.btn-close');
+    
+ 
+    certif1.addEventListener("click", () => {
+        modal1.classList.toggle('modal-active');
+    })
+
+    btnClose1.addEventListener("click", () => {
+        modal1.classList.toggle('modal-active');
+    })
+
+}
+
+modalCertif();
+
 //------------------Flip--------------------------
 
 function flip() {
