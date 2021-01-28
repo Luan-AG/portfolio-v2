@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
-/* #E3E3E3 */
+/* #E3E3E3 #ababab*/
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -26,7 +26,7 @@ main {
 }
 
 header {
-  background-color: #ababab;
+  background-color: #E3E3E3;
   position: fixed;
   width: 100vw;
 }
@@ -91,7 +91,7 @@ header .menu-dropdown {
   z-index: 1;
   right: 0;
   top: 60px;
-  background-color: #ababab;
+  background-color: #E3E3E3;
   overflow: hidden;
   /* hide dropdown content when height = 0px */
   -webkit-transition: 0.6s;
@@ -420,7 +420,7 @@ header .menu-active {
   margin: auto;
   width: 70%;
   height: 80%;
-  background-color: #ababab;
+  background-color: #E3E3E3;
   border-radius: 10px;
 }
 
@@ -483,7 +483,7 @@ header .menu-active {
           justify-content: space-between;
   -webkit-transform: rotateY(180deg) scale(1.2);
           transform: rotateY(180deg) scale(1.2);
-  background-color: #ababab;
+  background-color: #E3E3E3;
   border-radius: 10px;
   /* -webkit-backface-visibility: hidden; */
   /* safari */
@@ -552,7 +552,7 @@ header .menu-active {
   /* max-height: 500px; */
   width: 80%;
   max-width: 500px;
-  background-color: #ababab;
+  background-color: #E3E3E3;
   border-radius: 10px;
   padding: 20px 0;
   margin-bottom: 30px;
