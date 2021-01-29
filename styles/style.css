@@ -539,20 +539,24 @@ header .menu-active {
 .section-work .swiper-container .swiper-wrapper .swiper-slide .btn-swiper-slide .btn-live, .section-work .swiper-container .swiper-wrapper .swiper-slide .btn-swiper-slide .btn-github {
   font-size: 12px;
   text-decoration: none;
-  color: #000;
-  border: 1px solid #000;
+  color: #fff;
+  background-color: #3c3c3c;
   border-radius: 3px;
-  padding: 5px;
+  padding: 5px 7px;
   margin: 0 5px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .section-work .swiper-container .swiper-wrapper .swiper-slide .btn-swiper-slide .btn-live:active, .section-work .swiper-container .swiper-wrapper .swiper-slide .btn-swiper-slide .btn-github:active {
-  color: #0090e4;
-  border-color: #0090e4;
+  background-color: rgba(61, 61, 61, 0.5);
+}
+
+.section-work .swiper-container .swiper-wrapper .swiper-slide .btn-swiper-slide .btn-github {
+  padding: 5px 10px;
 }
 
 .section-work .swiper-container .swiper-wrapper .swiper-slide .backside {
+  background-color: #d8d8d8;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -571,10 +575,9 @@ header .menu-active {
           transform: rotateY(180deg) scale(1.2);
   background-color: #d8d8d8;
   border-radius: 10px;
-  /* -webkit-backface-visibility: hidden; */
-  /* safari */
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  /* safari */
+  backface-visibility: hidden;
   position: absolute;
 }
 
@@ -583,11 +586,12 @@ header .menu-active {
   width: 100%;
 }
 
-.section-work .swiper-container .swiper-wrapper .swiper-slide .backside div .btn-back {
+.section-work .swiper-container .swiper-wrapper .swiper-slide .backside div a {
   font-size: 12px;
   color: #000;
-  padding: 5px;
+  padding: 15px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  margin: 0;
 }
 
 .section-work .swiper-container .swiper-wrapper .swiper-slide-active {
