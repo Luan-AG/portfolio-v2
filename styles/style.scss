@@ -19,7 +19,30 @@ $navheight: 66px;
 body {
     font-family: $rubik;
     background-color: $bodyBackground;
+    
 }
+
+#logo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fill .5s ease  .9s  forwards, move .7s ease-out 2s forwards, shrink .7s ease-out 2s forwards;
+    width: 15vw;
+    height: 15vvh;
+    z-index: 29;
+    
+  }
+  
+  #logo path {
+    transition: .5s;
+    stroke-dasharray: 285;
+    stroke-dashoffset: 285;
+    animation: line-anim 2s ease forwards;
+    stroke: $fontColor;
+  }
+  
+  
 
 main {
     position: fixed;
@@ -28,6 +51,9 @@ main {
     height: 100vh;
     width: 100%;
     z-index: -1;
+    visibility: hidden;
+    opacity: 0;
+    animation: delay 1.5s ease  2.2s  forwards;
 }
 
 .underscore {
@@ -47,4 +73,45 @@ main {
 .section-out {
     opacity:1;
 }
+
+@keyframes delay {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes line-anim {
+    100% {
+      stroke-dashoffset: 100;
+      
+    }
+  
+  }
+  
+  @keyframes move {
+    100% {
+      position: absolute;
+      top: 23px;
+      left: 23px;
+      transform: translate(0, 0);
+    }
+  }
+  
+  @keyframes shrink {
+    100% {
+      width: 35px;
+      height: 22px;
+    }
+  }
+  
+  @keyframes fill {
+    0% {
+      fill: transparent;
+    }
+    
+    100% {
+      fill: $fontColor;
+    }
+  }
 
