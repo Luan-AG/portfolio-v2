@@ -14,17 +14,12 @@ header {
                
         .images-nav{
             display: flex;
-            justify-content: space-between; 
+            justify-content: flex-end; 
             
-            .logo {
-                height: 22px;
-                margin: auto 5px;
-                cursor: pointer;
-                -webkit-tap-highlight-color: rgba(0,0,0,0);
-                visibility: hidden;
-            }
+            
     
             .hamburger {
+                
                 a {
                     -webkit-tap-highlight-color: rgba(0,0,0,0);
                 }

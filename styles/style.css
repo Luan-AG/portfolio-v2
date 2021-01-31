@@ -23,6 +23,7 @@ body {
   width: 70px;
   height: 44px;
   z-index: 29;
+  cursor: pointer;
 }
 
 #logo path {
@@ -71,17 +72,9 @@ header nav .images-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-header nav .images-nav .logo {
-  height: 22px;
-  margin: auto 5px;
-  cursor: pointer;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  visibility: hidden;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 header nav .images-nav .hamburger a {

@@ -116,7 +116,7 @@ const toggleSections = () => {
     const skillsBtn = document.querySelector('.skills-btn');
     const workBtn = document.querySelector('.work-btn');
     const contactBtn = document.querySelector('.contact-btn');
-    const logoBtn = document.querySelector('.logo');
+    const logoBtn = document.querySelector('#logo');
     const contactMe = document.querySelector('.contact-me');
     //menu dropdown
     const burger = document.querySelector(".hamburger");
