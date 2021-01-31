@@ -20,8 +20,8 @@ body {
           transform: translate(-50%, -50%);
   -webkit-animation: fill .5s ease  .9s  forwards, move .7s ease-out 2s forwards, shrink .7s ease-out 2s forwards;
           animation: fill .5s ease  .9s  forwards, move .7s ease-out 2s forwards, shrink .7s ease-out 2s forwards;
-  width: 15vw;
-  height: 15vvh;
+  width: 70px;
+  height: 44px;
   z-index: 29;
 }
 
@@ -44,8 +44,8 @@ main {
   z-index: -1;
   visibility: hidden;
   opacity: 0;
-  -webkit-animation: delay 1.5s ease  2.2s  forwards;
-          animation: delay 1.5s ease  2.2s  forwards;
+  -webkit-animation: delay 1.5s ease 2.4s forwards;
+          animation: delay 1.5s ease 2.4s forwards;
 }
 
 .underscore {
@@ -59,8 +59,8 @@ header {
   z-index: 24;
   visibility: hidden;
   opacity: 0;
-  -webkit-animation: delay 1.5s ease  2s  forwards;
-          animation: delay 1.5s ease  2s  forwards;
+  -webkit-animation: delay 1.5s ease  2.4s  forwards;
+          animation: delay 1.5s ease  2.4s  forwards;
 }
 
 header nav {
