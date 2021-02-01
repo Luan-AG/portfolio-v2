@@ -3,8 +3,8 @@ header {
     position: fixed;
     width: 100vw;
     z-index: 24;
-    visibility: visible; /* change to hidden */
-    opacity: 1;          /* change to 0 */
+    visibility: hidden; /* change to hidden */
+    opacity: 0;          /* change to 0 */
     animation: delay 1.5s ease  2.4s  forwards;
     
     

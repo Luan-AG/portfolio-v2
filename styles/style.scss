@@ -51,8 +51,8 @@ main {
     height: 100vh;
     width: 100%;
     z-index: -1;
-    visibility: visible; /* change to hidden */
-    opacity: 1;          /* change to 0 */
+    visibility: hidden; /* change to hidden */
+    opacity: 0;          /* change to 0 */
     animation: delay 1.5s ease 2.4s forwards;
 }
 
@@ -74,7 +74,15 @@ main {
     opacity:1;
 }
 
-/* @keyframes delay {
+@keyframes fade-in {
+ 
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes delay {
     100% {
         visibility: visible;
         opacity: 1;
@@ -113,5 +121,5 @@ main {
     100% {
       fill: $fontColor;
     }
-  } */
+  }
 
