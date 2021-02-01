@@ -43,8 +43,10 @@ main {
   height: 100vh;
   width: 100%;
   z-index: -1;
-  visibility: hidden;
-  opacity: 0;
+  visibility: visible;
+  /* change to hidden */
+  opacity: 1;
+  /* change to 0 */
   -webkit-animation: delay 1.5s ease 2.4s forwards;
           animation: delay 1.5s ease 2.4s forwards;
 }
@@ -58,8 +60,10 @@ header {
   position: fixed;
   width: 100vw;
   z-index: 24;
-  visibility: hidden;
-  opacity: 0;
+  visibility: visible;
+  /* change to hidden */
+  opacity: 1;
+  /* change to 0 */
   -webkit-animation: delay 1.5s ease  2.4s  forwards;
           animation: delay 1.5s ease  2.4s  forwards;
 }
@@ -122,6 +126,8 @@ header .menu-dropdown {
   /* hide dropdown content when height = 0px */
   -webkit-transition: 0.6s;
   transition: 0.6s;
+  -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 header .menu-dropdown ul {
@@ -665,7 +671,7 @@ header .menu-active {
 
 .section-contact .form-container {
   height: 70%;
-  /* max-height: 500px; */
+  max-height: 500px;
   width: 80%;
   max-width: 500px;
   background-color: #d8d8d8;
@@ -747,81 +753,44 @@ header .menu-active {
   opacity: 1;
 }
 
-@-webkit-keyframes delay {
-  100% {
-    visibility: visible;
-    opacity: 1;
-  }
-}
-
-@keyframes delay {
-  100% {
-    visibility: visible;
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes line-anim {
-  100% {
-    stroke-dashoffset: 100;
-  }
+/* @keyframes delay {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
 }
 
 @keyframes line-anim {
-  100% {
-    stroke-dashoffset: 100;
+    100% {
+      stroke-dashoffset: 100;
+      
+    }
+  
   }
-}
-
-@-webkit-keyframes move {
-  100% {
-    position: absolute;
-    top: 23px;
-    left: 23px;
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+  
+  @keyframes move {
+    100% {
+      position: absolute;
+      top: 23px;
+      left: 23px;
+      transform: translate(0, 0);
+    }
   }
-}
-
-@keyframes move {
-  100% {
-    position: absolute;
-    top: 23px;
-    left: 23px;
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+  
+  @keyframes shrink {
+    100% {
+      width: 35px;
+      height: 22px;
+    }
   }
-}
-
-@-webkit-keyframes shrink {
-  100% {
-    width: 35px;
-    height: 22px;
-  }
-}
-
-@keyframes shrink {
-  100% {
-    width: 35px;
-    height: 22px;
-  }
-}
-
-@-webkit-keyframes fill {
-  0% {
-    fill: transparent;
-  }
-  100% {
-    fill: #3c3c3c;
-  }
-}
-
-@keyframes fill {
-  0% {
-    fill: transparent;
-  }
-  100% {
-    fill: #3c3c3c;
-  }
-}
+  
+  @keyframes fill {
+    0% {
+      fill: transparent;
+    }
+    
+    100% {
+      fill: $fontColor;
+    }
+  } */
 /*# sourceMappingURL=style.css.map */
