@@ -1,0 +1,19 @@
+#logo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fill .5s ease  .9s  forwards, move .7s ease-out 2s forwards, shrink .7s ease-out 2s forwards;
+    width: 70px;
+    height: 44px;
+    z-index: 29;
+    cursor: pointer;
+  }
+  
+  #logo path {
+    transition: .5s;
+    stroke-dasharray: 285;
+    stroke-dashoffset: 285;
+    animation: line-anim 2s ease forwards;
+    stroke: $fontColor;
+  }

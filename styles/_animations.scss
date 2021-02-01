@@ -1,0 +1,52 @@
+.section-in {
+    transform: translate(0vw);
+}
+
+.section-out {
+    opacity:1;
+}
+
+@keyframes fade-in {
+    100% {
+      opacity: 1;
+      transform: translate(0px, 0px);
+    }
+  }
+  
+  @keyframes delay {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+  }
+  
+  @keyframes line-anim {
+    100% {
+      stroke-dashoffset: 100;
+    }
+  }
+    
+  @keyframes move {
+    100% {
+      position: absolute;
+      top: 23px;
+      left: 23px;
+      transform: translate(0, 0);
+    }
+  }
+    
+  @keyframes shrink {
+    100% {
+      width: 35px;
+      height: 22px;
+    }
+  }
+    
+  @keyframes fill {
+    0% {
+      fill: transparent;
+    }
+    100% {
+      fill: $fontColor;
+    }
+  }

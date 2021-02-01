@@ -18,31 +18,9 @@ $navheight: 66px;
 
 body {
     font-family: $rubik;
-    background-color: $bodyBackground;
-    
+    background-color: $fontColor;
+    overflow: hidden;  
 }
-
-#logo {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: fill .5s ease  .9s  forwards, move .7s ease-out 2s forwards, shrink .7s ease-out 2s forwards;
-    width: 70px;
-    height: 44px;
-    z-index: 29;
-    cursor: pointer;
-  }
-  
-  #logo path {
-    transition: .5s;
-    stroke-dasharray: 285;
-    stroke-dashoffset: 285;
-    animation: line-anim 2s ease forwards;
-    stroke: $fontColor;
-  }
-  
-  
 
 main {
     position: fixed;
@@ -51,75 +29,50 @@ main {
     height: 100vh;
     width: 100%;
     z-index: -1;
-    visibility: hidden; /* change to hidden */
-    opacity: 0;          /* change to 0 */
-    animation: delay 1.5s ease 2.4s forwards;
 }
 
 .underscore {
     background-image: url(../images/underscore.svg); 
 }
 
+@import "./logo-svg";
 @import "./header";
 @import "./section-about";
 @import "./section-skills";
 @import "./section-work";
 @import "./section-contact";
+@import "./animations";
 
-.section-in {
-    transform: translate(0vw);
-}
 
-.section-out {
-    opacity:1;
-}
 
-@keyframes fade-in {
+/* Desktop */
+
+@media only screen and (min-width: 1025px) {
  
-  100% {
-    opacity: 1;
-    transform: translate(0px, 0px);
-  }
-}
-
-@keyframes delay {
-    100% {
-        visibility: visible;
-        opacity: 1;
-    }
-}
-
-@keyframes line-anim {
-    100% {
-      stroke-dashoffset: 100;
-      
-    }
-  
-  }
-  
-  @keyframes move {
-    100% {
-      position: absolute;
-      top: 23px;
-      left: 23px;
-      transform: translate(0, 0);
-    }
-  }
-  
-  @keyframes shrink {
-    100% {
-      width: 35px;
-      height: 22px;
-    }
-  }
-  
-  @keyframes fill {
-    0% {
-      fill: transparent;
-    }
+  .card-desktop {
+    background-color: $navbar;
+    width: 80vw;
+    height: 80vh;
+    max-width: 900px;
+    max-height: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
     
-    100% {
-      fill: $fontColor;
-    }
-  }
+    
+
+
+  @import "./desktop-logo-svg";
+  @import "./desktop-header";
+  @import "./desktop-about";
+  @import "./desktop-skills";
+  @import "./desktop-work";
+  @import "./desktop-contact";
+  @import "./desktop-animations";
+
+  }  
+}
+ 
 

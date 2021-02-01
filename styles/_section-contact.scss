@@ -7,86 +7,97 @@
     top: 66px;
     overflow: hidden;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    align-items: flex-start;
+    justify-content: center;
     transition: transform 0.8s ease;
     transform: translate(100vw);
     opacity: 0;
+    
 
-    p {
-        margin: 0px 0px;
-    }
-
-    .form-container {
-        height: 70%;
-        max-height: 500px;
-        width: 80%;
-        max-width: 500px;
-        background-color: $navbar;
-        border-radius: 10px;
-        padding: 20px 0;
-        margin-bottom: 30px;
-        
-
-        form {
-            height: 100%;
+    .section-contact-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 40px;
+        margin-top: 40px;
+        p {
+            margin: 0px 0px;
+        }
+    
+        .form-container {
+            height: auto;
+            max-height: 500px;
             width: 80%;
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-            align-items: left;
-
-            label {
-                font-size: 14px;
-                padding: 0 0 10px 0;
-            }
-
-            input {
-                min-height: 25px;
-                margin: 0 0 10px 0;
-                outline-style: none;
-                font-size: 14px;
-                font-family: $rubik;
-                border-radius: 5px;
-                background-color: $bodyBackground;
-                border: none;
-                padding: 0 10px;
-                
-            }
-
-            textarea {
-                min-height: 100px;
-                max-height: 500px;
-                margin: 0 0 20px 0;
-                background-color: $bodyBackground;
-                border-radius: 5px;
-                outline-style: none;
-                border: none;
-                font-family: $rubik;
-                font-size: 14px;
-                padding: 5px 10px;
-            }
-
-            button {
-                border: none;
-                border-radius: 5px;
-                color: #f5f5f5;
-                font-size: 16px;
-                font-family: $rubik;
-                width: 50%;
-                max-width: 200px;
+            max-width: 500px;
+            background-color: $navbar;
+            border-radius: 10px;
+            padding: 20px 0;
+            
+            
+    
+            form {
+                height: 100%;
+                width: 80%;
                 margin: auto;
-                height: 40px;
-                background-color: $blueUnderscore;
-                &:hover {
-                    background-color: $blueHover;
-                    cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+    
+                label {
+                    font-size: 14px;
+                    padding: 0 0 10px 0;
                 }
+    
+                input {
+                    min-height: 25px;
+                    margin: 0 0 10px 0;
+                    outline-style: none;
+                    font-size: 14px;
+                    font-family: $rubik;
+                    border-radius: 5px;
+                    background-color: $bodyBackground;
+                    border: none;
+                    padding: 0 10px;
+                    
+                }
+    
+                textarea {
+                    min-height: 100px;
+                    max-height: 500px;
+                    margin: 0 0 20px 0;
+                    background-color: $bodyBackground;
+                    border-radius: 5px;
+                    outline-style: none;
+                    border: none;
+                    font-family: $rubik;
+                    font-size: 14px;
+                    padding: 5px 10px;
+                }
+    
+                button {
+                    border: none;
+                    border-radius: 5px;
+                    color: #f5f5f5;
+                    font-size: 16px;
+                    font-family: $rubik;
+                    width: 50%;
+                    max-width: 200px;
+                    margin: auto;
+                    height: 40px;
+                    background-color: $blueUnderscore;
+                    &:hover {
+                        background-color: $blueHover;
+                        cursor: pointer;
+                    }
+                }
+    
             }
-
         }
     }
+
+    
 
 
 
