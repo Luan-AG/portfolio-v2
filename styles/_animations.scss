@@ -50,3 +50,15 @@
       fill: $fontColor;
     }
   }
+
+  @media only screen and (min-width: 1025px) { 
+
+    @keyframes move-desktop {
+      100% {
+        top: 16%;
+        left: 20%;
+        transform: translate(0, 0);
+      }
+    }
+
+  }
