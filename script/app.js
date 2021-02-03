@@ -42,6 +42,31 @@ const modalResume = () => {
 
 modalResume();
 
+//------------------Modal Download Resume Desktop---------------------------------
+const modalResumeDesktop = () => {
+    const modalDownload = document.querySelector('.modal-download');
+    const fileBtn = document.querySelector('.resume-icon-desktop');
+    const cancel = document.querySelector('.cancel');
+    const download = document.querySelector('.download');
+       
+ 
+    fileBtn.addEventListener("click", () => {
+        modalDownload.classList.toggle('download-active');
+       
+    })
+
+    cancel.addEventListener("click", () => {
+        modalDownload.classList.remove('download-active');
+    })
+
+    download.addEventListener("click", () => {
+        modalDownload.classList.remove('download-active');
+    })
+
+}
+
+modalResumeDesktop();
+
 //------------------Modal Certificates---------------------------------
 
 const modalCertif = () => {

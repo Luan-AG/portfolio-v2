@@ -117,7 +117,6 @@ header {
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.8);
-    z-index: 10;
     display: flex;
     justify-content: center; 
     align-items: center;
@@ -240,7 +239,59 @@ header {
         text-decoration: underline 3px $blueUnderscore;
         text-underline-offset: 5px;
     }
+    
+    .modal-download {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 100;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        transition: .3s;
+        visibility: hidden;
+        opacity: 0;
+        
+        .confirm-buttons{
+            width: 100%;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            
+            .download, .cancel {
+                background-color: $blueUnderscore;
+                width: 90px;
+                text-align: center;
+                font-size: 14px;
+                text-decoration: none;
+                color: #fff;
+                border-radius: 3px;
+                padding: 10px;
+                margin: 0 10px;
+                -webkit-tap-highlight-color: rgba(0,0,0,0);
+                &:active {
+                    color: $blueHover;
+                    border-color: $blueHover;
+                }
+            }
 
+            .cancel {
+                background-color: $fontColor;
+                
+            }
+    
+        }
+    }
+
+        .download-active {
+            visibility: visible;
+            opacity: 1;
+            
+        }
 
 
 
