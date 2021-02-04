@@ -3,6 +3,7 @@
 $bodyBackground: #F3f3f3;
 $fontColor: #3c3c3c;
 $navbar: #d8d8d8; /* #E3E3E3 #ababab*/
+$navdesktop: #c7c7c7;
 $blueUnderscore:#22A0E7;
 $blueHover:#0090e4;
 $rubik:'Rubik', sans-serif;
@@ -78,7 +79,7 @@ main {
   
  
   
-  @import "./desktop-work";
+
   @import "./desktop-contact";
   @import "./desktop-animations";
 
