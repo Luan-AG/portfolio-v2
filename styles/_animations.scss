@@ -52,21 +52,5 @@
   }
 
 
-  /* Desktop */
 
   
-  @media only screen and (min-width: 1025px) { 
-
-    .section-in {
-      transform: translate(0%);
-    }
-
-    @keyframes move-desktop {
-      100% {
-        top: 16%;
-        left: 20%;
-        transform: translate(0, 0);
-      }
-    }
-
-  }

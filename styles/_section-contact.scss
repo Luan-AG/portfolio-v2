@@ -12,9 +12,7 @@
     transition: transform 0.8s ease;
     transform: translate(100vw);
     opacity: 0;
-    visibility: hidden;
-    animation: delay 1.2s ease 2.6s forwards;
-
+    
     .section-contact-content {
         width: 100%;
         display: flex;
@@ -103,7 +101,7 @@
     .section-contact {
         height: calc(100% - #{80px});
         width: 100%;
-        position: fixed;
+        position: absolute;
         z-index: 1;
         right: 0;
         top: 80px;
@@ -112,11 +110,9 @@
         align-items: flex-start;
         justify-content: center;
         transition: transform 0.8s ease;
-        transform: translate(0vw);
-        opacity: 1;
-        visibility: visible;
-        animation: delay 1.2s ease 2.6s forwards;
-    
+        transform: translate(100vw);
+        opacity: 0;
+           
         .section-contact-content {
             width: 60%;
             height: 100%;

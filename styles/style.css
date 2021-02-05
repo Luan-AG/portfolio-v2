@@ -216,8 +216,8 @@ header .menu-active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 1.9s;
+  transition: 1.9s;
   visibility: hidden;
   opacity: 0;
 }
@@ -403,12 +403,36 @@ header .menu-active {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-transition: .3s;
-    transition: .3s;
+    -webkit-transition: .5s;
+    transition: .5s;
     visibility: hidden;
     opacity: 0;
   }
-  .modal-download .confirm-buttons {
+  .modal-download .box-download {
+    background-color: #d8d8d8;
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 300px;
+    height: 120px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    opacity: 0;
+    -webkit-transition: ease 1s;
+    transition: ease 1s;
+  }
+  .modal-download .box-download .confirm-buttons {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -420,7 +444,7 @@ header .menu-active {
         -ms-flex-align: center;
             align-items: center;
   }
-  .modal-download .confirm-buttons .download, .modal-download .confirm-buttons .cancel {
+  .modal-download .box-download .confirm-buttons .download, .modal-download .box-download .confirm-buttons .cancel {
     background-color: #22A0E7;
     width: 90px;
     text-align: center;
@@ -432,15 +456,18 @@ header .menu-active {
     margin: 0 10px;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
-  .modal-download .confirm-buttons .download:active, .modal-download .confirm-buttons .cancel:active {
+  .modal-download .box-download .confirm-buttons .download:active, .modal-download .box-download .confirm-buttons .cancel:active {
     color: #0090e4;
     border-color: #0090e4;
   }
-  .modal-download .confirm-buttons .cancel {
+  .modal-download .box-download .confirm-buttons .cancel {
     background-color: #3c3c3c;
   }
   .download-active {
     visibility: visible;
+    opacity: 1;
+  }
+  .download-active .box-download {
     opacity: 1;
   }
 }
@@ -555,7 +582,7 @@ header .menu-active {
     height: calc(100% - 80px);
     width: 100%;
     position: absolute;
-    z-index: -21;
+    z-index: 1;
     right: 0;
     top: 80px;
     padding: 68px;
@@ -851,8 +878,8 @@ header .menu-active {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-transition: .5s;
-    transition: .5s;
+    -webkit-transition: .9s;
+    transition: .9s;
     visibility: hidden;
     opacity: 0;
   }
@@ -867,8 +894,8 @@ header .menu-active {
     width: 0vw;
     max-width: 600px;
     overflow: auto;
-    -webkit-transition: .5s;
-    transition: .5s;
+    -webkit-transition: .9s;
+    transition: .9s;
   }
   .section-skills .modal-active {
     opacity: 1;
@@ -1052,7 +1079,7 @@ header .menu-active {
   .section-work {
     height: calc(100% - 80px);
     width: 100%;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     right: 0;
     top: 80px;
@@ -1077,7 +1104,7 @@ header .menu-active {
     transition: transform 0.8s ease, -webkit-transform 0.8s ease;
     -webkit-transform: translate(100vw);
             transform: translate(100vw);
-    opacity: 1;
+    opacity: 0;
   }
   .section-work p {
     margin: 0px;
@@ -1247,9 +1274,6 @@ header .menu-active {
   -webkit-transform: translate(100vw);
           transform: translate(100vw);
   opacity: 0;
-  visibility: hidden;
-  -webkit-animation: delay 1.2s ease 2.6s forwards;
-          animation: delay 1.2s ease 2.6s forwards;
 }
 
 .section-contact .section-contact-content {
@@ -1353,7 +1377,7 @@ header .menu-active {
   .section-contact {
     height: calc(100% - 80px);
     width: 100%;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     right: 0;
     top: 80px;
@@ -1371,12 +1395,9 @@ header .menu-active {
     transition: -webkit-transform 0.8s ease;
     transition: transform 0.8s ease;
     transition: transform 0.8s ease, -webkit-transform 0.8s ease;
-    -webkit-transform: translate(0vw);
-            transform: translate(0vw);
-    opacity: 1;
-    visibility: visible;
-    -webkit-animation: delay 1.2s ease 2.6s forwards;
-            animation: delay 1.2s ease 2.6s forwards;
+    -webkit-transform: translate(100vw);
+            transform: translate(100vw);
+    opacity: 0;
   }
   .section-contact .section-contact-content {
     width: 60%;
@@ -1584,30 +1605,6 @@ header .menu-active {
 
 /* Desktop */
 @media only screen and (min-width: 1025px) {
-  .section-in {
-    -webkit-transform: translate(0%);
-            transform: translate(0%);
-  }
-  @-webkit-keyframes move-desktop {
-    100% {
-      top: 16%;
-      left: 20%;
-      -webkit-transform: translate(0, 0);
-              transform: translate(0, 0);
-    }
-  }
-  @keyframes move-desktop {
-    100% {
-      top: 16%;
-      left: 20%;
-      -webkit-transform: translate(0, 0);
-              transform: translate(0, 0);
-    }
-  }
-}
-
-/* Desktop */
-@media only screen and (min-width: 1025px) {
   .card-desktop {
     background-color: #d8d8d8;
     width: 80vw;
@@ -1630,24 +1627,6 @@ header .menu-active {
     width: 100%;
     height: 100%;
     overflow: hidden;
-  }
-  @-webkit-keyframes move {
-    100% {
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      -webkit-transform: translate(0, 0);
-              transform: translate(0, 0);
-    }
-  }
-  @keyframes move {
-    100% {
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      -webkit-transform: translate(0, 0);
-              transform: translate(0, 0);
-    }
   }
 }
 /*# sourceMappingURL=style.css.map */

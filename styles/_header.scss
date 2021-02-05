@@ -120,7 +120,7 @@ header {
     display: flex;
     justify-content: center; 
     align-items: center;
-    transition: .3s;
+    transition: 1.9s;
     visibility: hidden;
     opacity: 0;
 
@@ -269,47 +269,67 @@ header {
         display: flex;
         justify-content: center; 
         align-items: center;
-        transition: .3s;
+        transition: .5s;
         visibility: hidden;
         opacity: 0;
-        
-        .confirm-buttons{
-            width: 100%;
-            display: flex;
-            justify-content: center; 
-            align-items: center;
+        .box-download {
             
-            .download, .cancel {
-                background-color: $blueUnderscore;
-                width: 90px;
-                text-align: center;
-                font-size: 14px;
-                text-decoration: none;
-                color: #fff;
-                border-radius: 3px;
-                padding: 10px;
-                margin: 0 10px;
-                -webkit-tap-highlight-color: rgba(0,0,0,0);
-                &:active {
-                    color: $blueHover;
-                    border-color: $blueHover;
+            background-color: $navbar;
+            padding: 10px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 300px;
+            height: 120px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around; 
+            align-items: center;
+            opacity: 0;
+            transition:ease 1s;
+
+            .confirm-buttons{
+                width: 100%;
+                display: flex;
+                justify-content: center; 
+                align-items: center;
+                
+                .download, .cancel {
+                    background-color: $blueUnderscore;
+                    width: 90px;
+                    text-align: center;
+                    font-size: 14px;
+                    text-decoration: none;
+                    color: #fff;
+                    border-radius: 3px;
+                    padding: 10px;
+                    margin: 0 10px;
+                    -webkit-tap-highlight-color: rgba(0,0,0,0);
+                    &:active {
+                        color: $blueHover;
+                        border-color: $blueHover;
+                    }
                 }
+    
+                .cancel {
+                    background-color: $fontColor;
+                    
+                }
+        
             }
 
-            .cancel {
-                background-color: $fontColor;
-                
-            }
-    
         }
+        
     }
 
         .download-active {
             visibility: visible;
             opacity: 1;
+            .box-download {
+                opacity: 1;
+            }
             
         }
 
-
-
+   
 }

@@ -148,7 +148,7 @@
 .section-work {
     height: calc(100% - #{80px});
     width: 100%;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     right: 0;
     top: 80px;
@@ -160,7 +160,7 @@
     justify-content: space-evenly;
     transition: transform 0.8s ease;
     transform: translate(100vw);
-    opacity: 1;
+    opacity: 0;
     
     p {
         margin: 0px;
