@@ -147,11 +147,12 @@
 
 .section-work {
     height: calc(100% - #{80px});
-    width: 100%;
+    width: 85%;
     position: absolute;
     z-index: 1;
     right: 0;
     top: 80px;
+    margin: 0 68px;
     padding-top: 0px;
     overflow: hidden;
     display: flex;
@@ -163,7 +164,7 @@
     opacity: 0;
     
     p {
-        margin: 0px;
+        margin: 20px;
     }
 
     .swiper-container {
@@ -211,6 +212,7 @@
                         width: 100%;
                         padding: 0 15px;
                         font-size: 12px;
+                        margin: 0;
                     }
     
                     .btn-read-more {
@@ -236,14 +238,18 @@
                             &:active {
                                 background-color: hsla(0, 0%, 24%, 0.5);
                             }
+                            &:hover {
+                                background-color: hsla(0, 0%, 24%, 0.5);
+                            }
                         }
                         
                         .btn-github {
                             padding: 5px 10px;
                         }
                     }
+               }
 
-                }
+                
                 
                 .btn-swiper-slide {
                     display: none;
@@ -252,18 +258,7 @@
                 
 
                 .backside {
-                    background-color: $navbar;
-                    height: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: space-between;
-                    transform: rotateY(180deg) scale(1.2);
-                    background-color: $navbar;
-                    border-radius: 10px;
-                    -webkit-backface-visibility: hidden; /* safari */
-                    backface-visibility: hidden;
-                    position: absolute;
+                    display: none;
                     
                     div {
 
@@ -286,8 +281,8 @@
             }
             
             .swiper-slide-active {
-                transform: scale(1.2);
-                transition: .8s;
+                transform: scale(1.15);
+                transition: .5s;
                 transform-style: preserve-3d;
             }    
         }

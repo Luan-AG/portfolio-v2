@@ -131,8 +131,6 @@ function flip() {
 
 flip();
 
-
-
 //------------------Toggle Sections---------------------------------
 
 const toggleSections = () => {
@@ -400,7 +398,7 @@ const toggleSectionsDesk = () => {
 
 toggleSectionsDesk();
 
-//------------------Toggle Sections Desktop---------------------------------
+//------------------Toggle Underscore Desktop---------------------------------
 
 const toggleUnderscore = () => {
 

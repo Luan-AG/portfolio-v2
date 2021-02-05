@@ -292,12 +292,12 @@ header .menu-active {
     left: 0;
     width: 100%;
     height: 80px;
-    visibility: visible;
+    visibility: hidden;
     /* change to hidden */
-    opacity: 1;
+    opacity: 0;
     /* change to 0 */
-    -webkit-animation: none;
-            animation: none;
+    -webkit-animation: delay 1.5s ease  2.4s  forwards;
+            animation: delay 1.5s ease  2.4s  forwards;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }
@@ -1078,11 +1078,12 @@ header .menu-active {
 @media only screen and (min-width: 1025px) {
   .section-work {
     height: calc(100% - 80px);
-    width: 100%;
+    width: 85%;
     position: absolute;
     z-index: 1;
     right: 0;
     top: 80px;
+    margin: 0 68px;
     padding-top: 0px;
     overflow: hidden;
     display: -webkit-box;
@@ -1107,7 +1108,7 @@ header .menu-active {
     opacity: 0;
   }
   .section-work p {
-    margin: 0px;
+    margin: 20px;
   }
   .section-work .swiper-container {
     height: 90%;
@@ -1170,6 +1171,7 @@ header .menu-active {
     width: 100%;
     padding: 0 15px;
     font-size: 12px;
+    margin: 0;
   }
   .section-work .swiper-container .swiper-wrapper .swiper-slide div .btn-read-more {
     display: none;
@@ -1193,6 +1195,9 @@ header .menu-active {
   .section-work .swiper-container .swiper-wrapper .swiper-slide div .btn-swiper-slide-desktop .btn-live:active, .section-work .swiper-container .swiper-wrapper .swiper-slide div .btn-swiper-slide-desktop .btn-github:active {
     background-color: rgba(61, 61, 61, 0.5);
   }
+  .section-work .swiper-container .swiper-wrapper .swiper-slide div .btn-swiper-slide-desktop .btn-live:hover, .section-work .swiper-container .swiper-wrapper .swiper-slide div .btn-swiper-slide-desktop .btn-github:hover {
+    background-color: rgba(61, 61, 61, 0.5);
+  }
   .section-work .swiper-container .swiper-wrapper .swiper-slide div .btn-swiper-slide-desktop .btn-github {
     padding: 5px 10px;
   }
@@ -1200,29 +1205,7 @@ header .menu-active {
     display: none;
   }
   .section-work .swiper-container .swiper-wrapper .swiper-slide .backside {
-    background-color: #d8d8d8;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-transform: rotateY(180deg) scale(1.2);
-            transform: rotateY(180deg) scale(1.2);
-    background-color: #d8d8d8;
-    border-radius: 10px;
-    -webkit-backface-visibility: hidden;
-    /* safari */
-    backface-visibility: hidden;
-    position: absolute;
+    display: none;
   }
   .section-work .swiper-container .swiper-wrapper .swiper-slide .backside div p {
     margin: 20px 0 0 0;
@@ -1236,10 +1219,10 @@ header .menu-active {
     margin: 0;
   }
   .section-work .swiper-container .swiper-wrapper .swiper-slide-active {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-    -webkit-transition: .8s;
-    transition: .8s;
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    -webkit-transition: .5s;
+    transition: .5s;
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
   }
