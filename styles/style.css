@@ -1108,12 +1108,12 @@ header .menu-active {
     opacity: 0;
   }
   .section-work p {
-    margin: 20px;
+    margin: 20px 0 0 0;
   }
   .section-work .swiper-container {
     height: 90%;
     width: 100%;
-    /* max-width: 600px; */
+    max-height: 450px;
     margin: auto;
     margin-bottom: 0px;
     margin-top: 0;
@@ -1368,9 +1368,9 @@ header .menu-active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1395,9 +1395,9 @@ header .menu-active {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 0px;
     margin-top: 0px;
   }
@@ -1405,7 +1405,7 @@ header .menu-active {
     margin: 20px 0px 40px 0;
   }
   .section-contact .section-contact-content .form-container {
-    height: 250px;
+    height: auto;
     max-height: 500px;
     width: 80%;
     max-width: 500px;
@@ -1448,8 +1448,7 @@ header .menu-active {
             box-shadow: 0px 0px 10px 3px rgba(22, 114, 235, 0.3);
   }
   .section-contact .section-contact-content .form-container form textarea {
-    min-height: 100px;
-    max-height: 500px;
+    height: 100px;
     margin: 0 0 20px 0;
     background-color: #F3f3f3;
     border-radius: 5px;
@@ -1471,8 +1470,7 @@ header .menu-active {
     font-family: "Rubik", sans-serif;
     width: 40%;
     max-width: 200px;
-    margin: auto;
-    margin-top: 10px;
+    margin: 10px auto;
     padding: 5px 20px;
     height: 40px;
     background-color: #22A0E7;
@@ -1592,7 +1590,7 @@ header .menu-active {
     background-color: #d8d8d8;
     width: 80vw;
     height: 80vh;
-    max-width: 900px;
+    max-width: 1000px;
     max-height: 650px;
     position: relative;
     top: 50%;
