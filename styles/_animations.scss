@@ -52,5 +52,15 @@
   }
 
 
+  @keyframes move-desktop {
+    100% {
+      position: absolute;
+      top: 30px;
+      left: 68px;
+      transform: translate(0%, 0%);
+    }
+  }
+
+
 
   
