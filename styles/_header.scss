@@ -209,7 +209,7 @@ header {
     }
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 900px) {
     header {
         background-color:$navdesktop;
         position: fixed;
@@ -265,6 +265,7 @@ header {
                     display: flex;
                     align-items: center;
                     gap: 46px;
+                    margin: 0 0 0 46px;
 
                     a {
                         height: 20px;
