@@ -22,6 +22,7 @@ main {
   right: 0;
   height: 100vh;
   width: 100%;
+  border-radius: 10px;
   /* z-index: -1; */
 }
 
@@ -1662,6 +1663,14 @@ header .menu-active {
 
 /* Desktop */
 @media only screen and (min-width: 900px) {
+  body {
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#229fe7a8), to(#229fe725));
+    background-image: linear-gradient(to bottom right, #229fe7a8, #229fe725);
+    /*  background-image: url(/images/Background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%; */
+  }
   .card-desktop {
     background-color: #d8d8d8;
     width: 80vw;
