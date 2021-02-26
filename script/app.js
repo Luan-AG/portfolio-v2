@@ -99,7 +99,7 @@ modalCertif();
 
 //------------------Flip--------------------------
 
-function flip() {
+/* function flip() {
     btnMore1 = document.querySelector('.btn-read-more1');
     btnBack1 = document.querySelector('.btn-back1');
     btnMore2 = document.querySelector('.btn-read-more2');
@@ -108,28 +108,28 @@ function flip() {
     btnBack3 = document.querySelector('.btn-back3');
 
     btnMore1.addEventListener("click", function(e) {
-        e.target.parentElement.parentElement.style.transform = 'rotateY(-180deg)';
+        e.target.parentElement.parentElement.style.transform = 'rotateY(180deg)';
       });
     btnBack1.addEventListener("click", function(e) {
         e.target.parentElement.parentElement.parentElement.style.transform = '';
       });
 
     btnMore2.addEventListener("click", function(e) {
-        e.target.parentElement.parentElement.style.transform = 'rotateY(-180deg)';
+        e.target.parentElement.parentElement.style.transform = 'rotateY(180deg)';
       });
     btnBack2.addEventListener("click", function(e) {
         e.target.parentElement.parentElement.parentElement.style.transform = '';
       });
 
     btnMore3.addEventListener("click", function(e) {
-        e.target.parentElement.parentElement.style.transform = 'rotateY(-180deg)';
+        e.target.parentElement.parentElement.style.transform = 'rotateY(180deg)';
       });
     btnBack3.addEventListener("click", function(e) {
         e.target.parentElement.parentElement.parentElement.style.transform = '';
       });
 }
 
-flip();
+flip(); */
 
 //------------------Toggle Sections---------------------------------
 

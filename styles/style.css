@@ -658,7 +658,7 @@ header .menu-active {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   gap: 40px;
-  margin: 10% 0 20% 0;
+  margin: 10% 0 18% 0;
 }
 
 .section-about .text-about h1 {
@@ -1114,13 +1114,30 @@ header .menu-active {
   border-radius: 5px;
 }
 
-.section-work .swiper-container .swiper-wrapper .swiper-slide div p {
+.section-work .swiper-container .swiper-wrapper .swiper-slide div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.section-work .swiper-container .swiper-wrapper .swiper-slide div div p {
   width: 100%;
   padding: 0 15px;
   font-size: 3vw;
 }
 
-.section-work .swiper-container .swiper-wrapper .swiper-slide div .btn-read-more {
+.section-work .swiper-container .swiper-wrapper .swiper-slide div div .btn-read-more {
   padding-top: 10px;
   font-size: 3vw;
   color: #000;
@@ -1157,42 +1174,7 @@ header .menu-active {
 }
 
 .section-work .swiper-container .swiper-wrapper .swiper-slide .backside {
-  background-color: #d8d8d8;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-transform: rotateY(180deg) scale(1.2);
-          transform: rotateY(180deg) scale(1.2);
-  background-color: #d8d8d8;
-  border-radius: 10px;
-  -webkit-backface-visibility: hidden;
-  /* safari */
-  backface-visibility: hidden;
-  position: absolute;
-}
-
-.section-work .swiper-container .swiper-wrapper .swiper-slide .backside div p {
-  margin: 20px 0 0 0;
-  width: 100%;
-}
-
-.section-work .swiper-container .swiper-wrapper .swiper-slide .backside div a {
-  font-size: 12px;
-  color: #000;
-  padding: 15px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  margin: 0;
+  display: none;
 }
 
 .section-work .swiper-container .swiper-wrapper .swiper-slide-active {
@@ -1208,7 +1190,7 @@ header .menu-active {
   .section-work p {
     font-size: 16px;
   }
-  .section-work .swiper-container .swiper-wrapper .swiper-slide div p, .section-work .swiper-container .swiper-wrapper .swiper-slide div .btn-read-more {
+  .section-work .swiper-container .swiper-wrapper .swiper-slide div div p, .section-work .swiper-container .swiper-wrapper .swiper-slide div div .btn-read-more {
     font-size: 12px;
   }
   .section-work .swiper-container .swiper-wrapper .swiper-slide .btn-swiper-slide .btn-live, .section-work .swiper-container .swiper-wrapper .swiper-slide .btn-swiper-slide .btn-github {
@@ -1308,14 +1290,11 @@ header .menu-active {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .section-work .swiper-container .swiper-wrapper .swiper-slide div p {
+  .section-work .swiper-container .swiper-wrapper .swiper-slide div div p {
     width: 100%;
     padding: 0 15px;
     font-size: 12px;
     margin: 0;
-  }
-  .section-work .swiper-container .swiper-wrapper .swiper-slide div .btn-read-more {
-    display: none;
   }
   .section-work .swiper-container .swiper-wrapper .swiper-slide div .btn-swiper-slide-desktop {
     display: block;
@@ -1428,7 +1407,7 @@ header .menu-active {
   height: auto;
   max-height: 500px;
   width: 80%;
-  max-width: 500px;
+  max-width: 400px;
   background-color: #d8d8d8;
   border-radius: 10px;
   padding: 20px 0;
