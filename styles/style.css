@@ -217,8 +217,8 @@ header .menu-active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: 1.9s;
-  transition: 1.9s;
+  -webkit-transition: .5s;
+  transition: .5s;
   visibility: hidden;
   opacity: 0;
 }
@@ -308,8 +308,8 @@ header .menu-active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: .9s;
-  transition: .9s;
+  -webkit-transition: .5s;
+  transition: .5s;
   visibility: hidden;
   opacity: 0;
 }
@@ -326,8 +326,8 @@ header .menu-active {
   width: 0vw;
   max-width: 600px;
   overflow: auto;
-  -webkit-transition: .9s;
-  transition: .9s;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .modal-1 a, .modal-2 a {
@@ -1516,6 +1516,7 @@ header .menu-active {
     background-color: rgba(0, 0, 0, 0);
     border-radius: 10px;
     padding: 0px;
+    border: 2px solid black;
   }
   .section-contact .section-contact-content .form-container form {
     height: 100%;
