@@ -1404,7 +1404,6 @@ header .menu-active {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  gap: 40px;
   margin-top: 40px;
 }
 
@@ -1421,6 +1420,7 @@ header .menu-active {
   background-color: #d8d8d8;
   border-radius: 10px;
   padding: 20px 0;
+  margin-top: 40px;
 }
 
 .section-contact .section-contact-content .form-container form {
@@ -1746,11 +1746,11 @@ header .menu-active {
 /* Desktop */
 @media only screen and (min-width: 900px) {
   body {
-    /* background-image: linear-gradient(to bottom right, #229fe7a8, #08283a); */
-    background-image: url(/images/backgeo.svg);
+    /* background-image: linear-gradient(to bottom right, #7ac3eca8, #244e66); */
+    /* background-image: url(/images/backgeo.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
   }
   .card-desktop {
     background-color: #d8d8d8;
