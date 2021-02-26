@@ -1551,6 +1551,7 @@ header .menu-active {
     border-radius: 10px;
     padding: 0px;
     background-color: #c7c7c7;
+    margin-top: 0px;
   }
   .section-contact .section-contact-content .form-container form {
     height: 100%;
