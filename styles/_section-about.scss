@@ -44,7 +44,7 @@
             animation: fade-in 1.2s ease 2.6s forwards;
             opacity: 0;
             transform: translate(0px, 50px);
-            
+            font-size: 6vw;
         }
 
         .description {
@@ -55,6 +55,7 @@
             animation: fade-in 1.2s ease 2.8s forwards;
             opacity: 0;
             transform: translate(0px, 50px);
+            font-size: 4vw;
         }
 
         a {
@@ -73,6 +74,21 @@
             transform: translate(0px, 50px);
         }
     }
+}
+@media only screen and (min-width: 450px) {
+    .section-about {
+        .text-about {
+            h1 {
+                font-size: 24px;
+            }
+        
+            .description {
+                font-size: 16px;
+            }
+        }
+    }
+    
+    
 }
 
 @media only screen and (min-width: 900px) {

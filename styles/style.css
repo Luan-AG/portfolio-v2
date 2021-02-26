@@ -672,6 +672,7 @@ header .menu-active {
   opacity: 0;
   -webkit-transform: translate(0px, 50px);
           transform: translate(0px, 50px);
+  font-size: 6vw;
 }
 
 .section-about .text-about .description {
@@ -684,6 +685,7 @@ header .menu-active {
   opacity: 0;
   -webkit-transform: translate(0px, 50px);
           transform: translate(0px, 50px);
+  font-size: 4vw;
 }
 
 .section-about .text-about a {
@@ -703,6 +705,15 @@ header .menu-active {
 .section-about .text-about a:hover {
   background-color: #0090e4;
   color: #fff;
+}
+
+@media only screen and (min-width: 450px) {
+  .section-about .text-about h1 {
+    font-size: 24px;
+  }
+  .section-about .text-about .description {
+    font-size: 16px;
+  }
 }
 
 @media only screen and (min-width: 900px) {
@@ -846,6 +857,7 @@ header .menu-active {
   text-align: center;
   line-height: 1.5;
   padding: 0 25px;
+  font-size: 4vw;
 }
 
 .section-skills .tech-logos {
@@ -881,12 +893,12 @@ header .menu-active {
 }
 
 .section-skills .tech-logos .logo-box img {
-  height: 65px;
+  height: 15vw;
   padding: 0px 10px;
 }
 
 .section-skills .tech-logos .logo-box p {
-  font-size: 14px;
+  font-size: 3.5vw;
   padding: 0;
 }
 
@@ -943,6 +955,18 @@ header .menu-active {
 
 .section-skills .modal-active .photo1 {
   width: 100vw;
+}
+
+@media only screen and (min-width: 450px) {
+  .section-skills p {
+    font-size: 16px;
+  }
+  .section-skills .tech-logos .logo-box img {
+    height: 65px;
+  }
+  .section-skills .tech-logos .logo-box p {
+    font-size: 16px;
+  }
 }
 
 @media only screen and (min-width: 900px) {
@@ -1041,6 +1065,7 @@ header .menu-active {
 }
 
 .section-work p {
+  font-size: 4vw;
   margin: 0px 0px;
 }
 
@@ -1092,12 +1117,12 @@ header .menu-active {
 .section-work .swiper-container .swiper-wrapper .swiper-slide div p {
   width: 100%;
   padding: 0 15px;
-  font-size: 12px;
+  font-size: 3vw;
 }
 
 .section-work .swiper-container .swiper-wrapper .swiper-slide div .btn-read-more {
   padding-top: 10px;
-  font-size: 12px;
+  font-size: 3vw;
   color: #000;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -1113,7 +1138,7 @@ header .menu-active {
 }
 
 .section-work .swiper-container .swiper-wrapper .swiper-slide .btn-swiper-slide .btn-live, .section-work .swiper-container .swiper-wrapper .swiper-slide .btn-swiper-slide .btn-github {
-  font-size: 12px;
+  font-size: 3vw;
   text-decoration: none;
   color: #fff;
   background-color: rgba(60, 60, 60, 0.7);
@@ -1177,6 +1202,18 @@ header .menu-active {
   transition: .8s;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
+}
+
+@media only screen and (min-width: 450px) {
+  .section-work p {
+    font-size: 16px;
+  }
+  .section-work .swiper-container .swiper-wrapper .swiper-slide div p, .section-work .swiper-container .swiper-wrapper .swiper-slide div .btn-read-more {
+    font-size: 12px;
+  }
+  .section-work .swiper-container .swiper-wrapper .swiper-slide .btn-swiper-slide .btn-live, .section-work .swiper-container .swiper-wrapper .swiper-slide .btn-swiper-slide .btn-github {
+    font-size: 12px;
+  }
 }
 
 @media only screen and (min-width: 900px) {
@@ -1383,6 +1420,7 @@ header .menu-active {
 }
 
 .section-contact .section-contact-content p {
+  font-size: 4vw;
   margin: 0px 0px;
 }
 
@@ -1413,7 +1451,7 @@ header .menu-active {
 }
 
 .section-contact .section-contact-content .form-container form label {
-  font-size: 14px;
+  font-size: 3.5vw;
   padding: 0 0 10px 0;
 }
 
@@ -1421,7 +1459,7 @@ header .menu-active {
   min-height: 25px;
   margin: 0 0 10px 0;
   outline-style: none;
-  font-size: 14px;
+  font-size: 3.5vw;
   font-family: "Rubik", sans-serif;
   border-radius: 5px;
   background-color: #F3f3f3;
@@ -1438,7 +1476,7 @@ header .menu-active {
   outline-style: none;
   border: none;
   font-family: "Rubik", sans-serif;
-  font-size: 14px;
+  font-size: 3.5vw;
   padding: 5px 10px;
 }
 
@@ -1446,7 +1484,7 @@ header .menu-active {
   border: none;
   border-radius: 5px;
   color: #f5f5f5;
-  font-size: 16px;
+  font-size: 3.5vw;
   font-family: "Rubik", sans-serif;
   width: 50%;
   max-width: 200px;
@@ -1458,6 +1496,15 @@ header .menu-active {
 .section-contact .section-contact-content .form-container form button:hover {
   background-color: #0090e4;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 450px) {
+  .section-contact .section-contact-content p {
+    font-size: 16px;
+  }
+  .section-contact .section-contact-content .form-container form label, .section-contact .section-contact-content .form-container form input, .section-contact .section-contact-content .form-container form textarea, .section-contact .section-contact-content .form-container form button {
+    font-size: 14px;
+  }
 }
 
 @media only screen and (min-width: 900px) {

@@ -19,6 +19,7 @@
         text-align: center;
         line-height: 1.5;
         padding: 0 25px;
+        font-size: 4vw;
     }
     
     .tech-logos {
@@ -37,11 +38,11 @@
             align-items: center;
             justify-content: center;
             img{
-                height: 65px;
+                height: 15vw;
                 padding: 0px 10px;
              }
              p{
-                 font-size: 14px;
+                 font-size: 3.5vw;
                  padding: 0;
              }
         }
@@ -101,6 +102,28 @@
         }
     }
 
+}
+
+@media only screen and (min-width: 450px) {
+    
+    .section-skills {
+        p{
+            font-size: 16px;
+        }
+        .tech-logos {
+           
+            .logo-box{
+             
+                img {
+                    height: 65px;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    
 }
 
 @media only screen and (min-width: 900px) {

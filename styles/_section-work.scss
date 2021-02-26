@@ -15,6 +15,7 @@
     opacity: 0;
     
     p {
+        font-size: 4vw;
         margin: 0px 0px;
     }
 
@@ -57,12 +58,12 @@
                     p {
                         width: 100%;
                         padding: 0 15px;
-                        font-size: 12px;
+                        font-size: 3vw;
                     }
     
                     .btn-read-more {
                         padding-top: 10px;
-                        font-size: 12px;
+                        font-size: 3vw;
                         color: #000;
                         -webkit-tap-highlight-color: rgba(0,0,0,0);
                     }
@@ -81,7 +82,7 @@
                     
                     .btn-live, .btn-github {
                         
-                        font-size: 12px;
+                        font-size: 3vw;
                         text-decoration: none;
                         color: #fff;
                         background-color:  rgba(60, 60, 60, 0.7);
@@ -142,6 +143,40 @@
     }
 
 }
+@media only screen and (min-width: 450px) {
+    .section-work {
+               
+        p {
+            font-size: 16px;
+        }
+
+        .swiper-container {
+                
+            .swiper-wrapper {
+                               
+                .swiper-slide {
+                 
+                    div {
+    
+                        p, .btn-read-more  {
+                            font-size: 12px;
+                        }
+                    }
+                    .btn-swiper-slide {
+
+                        .btn-live, .btn-github {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+        
+                        
+                        
+}
+
 
 @media only screen and (min-width: 900px) {
 

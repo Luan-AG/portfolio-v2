@@ -22,6 +22,7 @@
         gap: 40px;
         margin-top: 40px;
         p {
+            font-size: 4vw;
             margin: 0px 0px;
         }
     
@@ -45,7 +46,7 @@
                 align-items: left;
     
                 label {
-                    font-size: 14px;
+                    font-size: 3.5vw;
                     padding: 0 0 10px 0;
                 }
     
@@ -53,7 +54,7 @@
                     min-height: 25px;
                     margin: 0 0 10px 0;
                     outline-style: none;
-                    font-size: 14px;
+                    font-size: 3.5vw;
                     font-family: $rubik;
                     border-radius: 5px;
                     background-color: $bodyBackground;
@@ -71,7 +72,7 @@
                     outline-style: none;
                     border: none;
                     font-family: $rubik;
-                    font-size: 14px;
+                    font-size: 3.5vw;
                     padding: 5px 10px;
                 }
     
@@ -79,7 +80,7 @@
                     border: none;
                     border-radius: 5px;
                     color: #f5f5f5;
-                    font-size: 16px;
+                    font-size: 3.5vw;
                     font-family: $rubik;
                     width: 50%;
                     max-width: 200px;
@@ -89,6 +90,25 @@
                     &:hover {
                         background-color: $blueHover;
                         cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 450px) {
+    .section-contact {
+        
+        .section-contact-content {
+            
+            p {
+                font-size: 16px;;
+            }
+
+            .form-container{
+                form {
+                    label, input, textarea, button {
+                        font-size: 14px;
                     }
                 }
             }
