@@ -1664,12 +1664,11 @@ header .menu-active {
 /* Desktop */
 @media only screen and (min-width: 900px) {
   body {
-    background-image: -webkit-gradient(linear, left top, right bottom, from(#229fe7a8), to(#229fe725));
-    background-image: linear-gradient(to bottom right, #229fe7a8, #229fe725);
-    /*  background-image: url(/images/Background.svg);
+    /* background-image: linear-gradient(to bottom right, #229fe7a8, #08283a); */
+    background-image: url(/images/backgeo.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 100%; */
+    background-position: center;
   }
   .card-desktop {
     background-color: #d8d8d8;
