@@ -1499,14 +1499,12 @@ header .menu-active {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     gap: 0px;
     margin-top: 0px;
+    padding-bottom: 40px;
   }
   .section-contact .section-contact-content p {
-    margin: 20px 0px 40px 0;
+    margin: 20px 0px 20px 0;
   }
   .section-contact .section-contact-content .form-container {
     height: auto;
@@ -1516,12 +1514,12 @@ header .menu-active {
     background-color: rgba(0, 0, 0, 0);
     border-radius: 10px;
     padding: 0px;
-    border: 2px solid black;
+    background-color: #c7c7c7;
   }
   .section-contact .section-contact-content .form-container form {
     height: 100%;
     width: 80%;
-    margin: auto;
+    margin: 30px auto auto auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1575,7 +1573,7 @@ header .menu-active {
     font-family: "Rubik", sans-serif;
     width: 40%;
     max-width: 200px;
-    margin: 10px auto;
+    margin: 0px auto 20px auto;
     padding: 5px 20px;
     height: 40px;
     background-color: #22A0E7;
