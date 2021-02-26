@@ -298,6 +298,10 @@ header .menu-active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -324,6 +328,28 @@ header .menu-active {
   overflow: auto;
   -webkit-transition: .9s;
   transition: .9s;
+}
+
+.modal-1 a, .modal-2 a {
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 5px 10px;
+}
+
+.modal-1 a:hover, .modal-2 a:hover {
+  background-color: #3c3c3c;
+}
+
+.modal-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-active .photo1 {
+  width: 100vw;
 }
 
 @media only screen and (min-width: 900px) {
@@ -838,9 +864,30 @@ header .menu-active {
   gap: 20px 0;
 }
 
-.section-skills .tech-logos img {
+.section-skills .tech-logos .logo-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-skills .tech-logos .logo-box img {
   height: 65px;
   padding: 0px 10px;
+}
+
+.section-skills .tech-logos .logo-box p {
+  font-size: 14px;
+  padding: 0;
 }
 
 .section-skills .certificates {

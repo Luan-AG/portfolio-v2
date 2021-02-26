@@ -31,10 +31,22 @@
         justify-items: center;
         gap: 20px 0;
         
-        img{
-           height: 65px;
-           padding: 0px 10px;
+        .logo-box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            img{
+                height: 65px;
+                padding: 0px 10px;
+             }
+             p{
+                 font-size: 14px;
+                 padding: 0;
+             }
         }
+        
+       
 
         
 
@@ -78,6 +90,8 @@
             transition: .5s ;
         }
     }
+
+    
 
     .modal-active {
         opacity: 1;
