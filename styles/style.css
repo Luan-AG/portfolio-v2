@@ -1118,10 +1118,14 @@ header .menu-active {
 }
 
 .section-work .swiper-container .swiper-wrapper .swiper-slide img {
-  width: 92%;
+  width: 82%;
   height: 50%;
   margin: 15px;
   border-radius: 5px;
+}
+
+.section-work .swiper-container .swiper-wrapper .swiper-slide div h3 {
+  margin-top: 20px;
 }
 
 .section-work .swiper-container .swiper-wrapper .swiper-slide div div {
@@ -1183,7 +1187,7 @@ header .menu-active {
   padding: 5px 10px;
 }
 
-.section-work .swiper-container .swiper-wrapper .swiper-slide .backside {
+.section-work .swiper-container .swiper-wrapper .swiper-slide .backside1, .section-work .swiper-container .swiper-wrapper .swiper-slide .backside2, .section-work .swiper-container .swiper-wrapper .swiper-slide .backside3, .section-work .swiper-container .swiper-wrapper .swiper-slide .backside4, .section-work .swiper-container .swiper-wrapper .swiper-slide .backside5 {
   display: none;
   height: 0px;
   /* height = 250px to show the menu */
@@ -1295,14 +1299,39 @@ header .menu-active {
     background-color: #c7c7c7;
     border-radius: 10px;
   }
-  .section-work .swiper-container .swiper-wrapper .swiper-slide img {
-    width: 48%;
-    height: 92%;
-    margin: 10px 0 10px 10px;
-    border-radius: 5px;
-  }
   .section-work .swiper-container .swiper-wrapper .swiper-slide div {
     height: 92%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 3;
+        grid-template-rows: 3;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .section-work .swiper-container .swiper-wrapper .swiper-slide div h3 {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    margin-top: 0;
+  }
+  .section-work .swiper-container .swiper-wrapper .swiper-slide div div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    height: 250px;
+  }
+  .section-work .swiper-container .swiper-wrapper .swiper-slide div div div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1313,11 +1342,16 @@ header .menu-active {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .section-work .swiper-container .swiper-wrapper .swiper-slide div div p {
+  .section-work .swiper-container .swiper-wrapper .swiper-slide div div div img {
+    width: 300px;
+    margin: 10px 0 10px 10px;
+    border-radius: 5px;
+  }
+  .section-work .swiper-container .swiper-wrapper .swiper-slide div div div p {
     width: 100%;
     padding: 0 15px;
     font-size: 12px;
@@ -1328,12 +1362,14 @@ header .menu-active {
     width: 100%;
     height: 25px;
     margin: 0px;
+    -ms-grid-row: 3;
+    grid-row: 3;
   }
   .section-work .swiper-container .swiper-wrapper .swiper-slide div .btn-swiper-slide-desktop .btn-live, .section-work .swiper-container .swiper-wrapper .swiper-slide div .btn-swiper-slide-desktop .btn-github {
     font-size: 12px;
     text-decoration: none;
     color: #fff;
-    background-color: rgba(60, 60, 60, 0.7);
+    background-color: #22A0E7;
     border-radius: 3px;
     padding: 5px 7px;
     margin: 0 5px;
@@ -1352,19 +1388,14 @@ header .menu-active {
     display: none;
   }
   .section-work .swiper-container .swiper-wrapper .swiper-slide .backside1 {
-    display: block;
-    height: 0px;
-    /* height = 250px to show the menu */
-    width: 100%;
     position: fixed;
     right: 0;
     top: 0px;
-    background-color: #c7c7c7;
+    background-color: #b3b3b3;
     overflow: hidden;
     /* hide dropdown content when height = 0px */
     -webkit-transition: 0.6s;
     transition: 0.6s;
-    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1381,9 +1412,12 @@ header .menu-active {
             justify-content: space-between;
     margin: auto;
     width: 100%;
-    height: 100%;
-    background-color: #c7c7c7;
+    height: 0%;
     border-radius: 10px;
+    /* height: 80%;
+                    width: 90%;
+                    margin-right: 10%;
+                    margin-top: 38px; */
   }
   .section-work .swiper-container .swiper-wrapper .swiper-slide .backside1 div p {
     margin: 20px 0 0 0;
@@ -1413,8 +1447,6 @@ header .menu-active {
             transform: scale(1.15);
     -webkit-transition: .5s;
     transition: .5s;
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
   }
   .section-work .swiper-container .swiper-pagination-bullet {
     width: 12px;

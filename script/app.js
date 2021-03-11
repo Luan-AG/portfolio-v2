@@ -97,39 +97,33 @@ const modalCertif = () => {
 
 modalCertif();
 
-//------------------Flip--------------------------
+//------------------Backside--------------------------
 
-/* function flip() {
-    btnMore1 = document.querySelector('.btn-read-more1');
-    btnBack1 = document.querySelector('.btn-back1');
-    btnMore2 = document.querySelector('.btn-read-more2');
-    btnBack2 = document.querySelector('.btn-back2');
-    btnMore3 = document.querySelector('.btn-read-more3');
-    btnBack3 = document.querySelector('.btn-back3');
+function backSide() {
+    const btnReadMore1 = document.querySelector('.btn-read-more1');
+    const btnBack1 = document.querySelector('.btn-back1');
+    const slide1 = document.querySelector('.slide1');
+    
+    btnReadMore1.addEventListener('click', () => {
+        const backSide1 = document.querySelector('.backside1');
+        backSide1.style.height = '100%';   
+    })
 
-    btnMore1.addEventListener("click", function(e) {
-        e.target.parentElement.parentElement.style.transform = 'rotateY(180deg)';
-      });
-    btnBack1.addEventListener("click", function(e) {
-        e.target.parentElement.parentElement.parentElement.style.transform = '';
-      });
+    btnBack1.addEventListener('click', () => {
+        const backSide1 = document.querySelector('.backside1');
+        backSide1.style.height = '0%';
+    })
 
-    btnMore2.addEventListener("click", function(e) {
-        e.target.parentElement.parentElement.style.transform = 'rotateY(180deg)';
-      });
-    btnBack2.addEventListener("click", function(e) {
-        e.target.parentElement.parentElement.parentElement.style.transform = '';
-      });
+    if(!slide1.classList.contains('swiper-slide-active')){
+        const backSide1 = document.querySelector('.backside1');
+        backSide1.style.height = '0%';
+    }
 
-    btnMore3.addEventListener("click", function(e) {
-        e.target.parentElement.parentElement.style.transform = 'rotateY(180deg)';
-      });
-    btnBack3.addEventListener("click", function(e) {
-        e.target.parentElement.parentElement.parentElement.style.transform = '';
-      });
+
+
 }
 
-flip(); */
+backSide();
 
 //------------------Toggle Sections---------------------------------
 
@@ -458,11 +452,11 @@ toggleUnderscore();
 
 //------------------Form Reload after Submit---------------------------------
 
-const reloadSubmit = () => {
+/* const reloadSubmit = () => {
     const btn = document.querySelector('.form-btn');
     btn.addEventListener('click', () => {
         setTimeout(function(){location.reload()}, 2000);
     })
 }
 
-reloadSubmit();
+reloadSubmit(); */

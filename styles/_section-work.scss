@@ -47,13 +47,16 @@
                                 
 
                 img {
-                    width: 92%;
+                    width: 82%;
                     height: 50%;
                     margin: 15px;
                     border-radius: 5px;
                 }
                 
                 div {
+                    h3{
+                        margin-top: 20px;
+                    }
                     div{
                         display: flex;
                         flex-direction: column;
@@ -107,7 +110,7 @@
                     }
                 }
 
-                .backside {
+                .backside1, .backside2, .backside3, .backside4, .backside5 {
                     display: none;
                     height: 0px; /* height = 250px to show the menu */
                     width: 100%; 
@@ -225,30 +228,50 @@
                                 
                                 
 
-                img {
-                    width: 48%;
-                    height: 92%;
-                    margin: 10px 0 10px 10px;
-                    border-radius: 5px;
-                }
+               
                 
                 div {
+
                     height: 92%;
-                    display: flex;
-                    flex-direction: column;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 3;
                     align-items: center;
                     justify-content: space-between;
+
+                    h3 {
+                        grid-row: 1;
+                        margin-top: 0;
+                    }
+
                     div {
-                        p {
-                            width: 100%;
-                            padding: 0 15px;
-                            font-size: 12px;
-                            margin: 0;
+                        display: flex;
+                        flex-direction: row;
+                        grid-row: 2;
+                        height: 250px;
+
+                        div {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            img {
+                                width: 300px;
+                                margin: 10px 0 10px 10px;
+                                border-radius: 5px;
+                            }
+                            p {
+                                width: 100%;
+                                padding: 0 15px;
+                                font-size: 12px;
+                                margin: 0;
+                            }
+            
+                            .btn-read-more {
+                                
+                            }
                         }
-        
-                        .btn-read-more {
-                            
-                        }
+                        
                     }
                     
 
@@ -257,13 +280,14 @@
                         width: 100%;
                         height: 25px;
                         margin: 0px;
+                        grid-row: 3;
                         
                         .btn-live, .btn-github {
                             
                             font-size: 12px;
                             text-decoration: none;
                             color: #fff;
-                            background-color:  rgba(60, 60, 60, 0.7);
+                            background-color:  $blueUnderscore;
                             border-radius: 3px;
                             padding: 5px 7px;
                             margin: 0 5px;
@@ -280,7 +304,7 @@
                             padding: 5px 10px;
                         }
                     }
-               }
+                }
 
                 
                 
@@ -291,17 +315,12 @@
                 
 
                 .backside1 {
-                    display: block;
-                    height: 0px; /* height = 250px to show the menu */
-                    width: 100%; 
                     position: fixed;
-                    
                     right: 0;
                     top: 0px;
-                    background-color: $navdesktop;
+                    background-color: #b3b3b3;
                     overflow: hidden; /* hide dropdown content when height = 0px */
                     transition: 0.6s;
-                    height: 100%;
                     display: flex;
                     flex-direction: row;
                     align-items: center;
@@ -309,9 +328,13 @@
                     justify-content: space-between;
                     margin: auto;
                     width: 100%;
-                    height: 100%;
-                    background-color: $navdesktop;
+                    height: 0%;
                     border-radius: 10px;
+                    /* height: 80%;
+                    width: 90%;
+                    margin-right: 10%;
+                    margin-top: 38px; */
+
                     div {
 
                         p {
@@ -339,9 +362,11 @@
             .swiper-slide-active {
                 transform: scale(1.15);
                 transition: .5s;
-                transform-style: preserve-3d;
-            }    
+                
+            }  
+            
         }
+        
         
         .swiper-pagination-bullet {
             width: 12px;
@@ -351,7 +376,6 @@
         
     }
 
-}
-
+    }
 }
 
