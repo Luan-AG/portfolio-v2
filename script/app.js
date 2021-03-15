@@ -450,13 +450,3 @@ const toggleUnderscore = () => {
 
 toggleUnderscore();
 
-//------------------Form Reload after Submit---------------------------------
-
-/* const reloadSubmit = () => {
-    const btn = document.querySelector('.form-btn');
-    btn.addEventListener('click', () => {
-        setTimeout(function(){location.reload()}, 2000);
-    })
-}
-
-reloadSubmit(); */

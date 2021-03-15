@@ -1330,6 +1330,7 @@ header .menu-active {
     -ms-grid-row: 2;
     grid-row: 2;
     height: 250px;
+    margin-bottom: 0px;
   }
   .section-work .swiper-container .swiper-wrapper .swiper-slide div div div {
     display: -webkit-box;
@@ -1452,6 +1453,12 @@ header .menu-active {
     width: 12px;
     height: 12px;
     margin-top: 20px;
+  }
+  .section-work .swiper-container .swiper-button-prev {
+    /* left: 30px; */
+  }
+  .section-work .swiper-container .swiper-button-next {
+    /* right: 30px; */
   }
 }
 

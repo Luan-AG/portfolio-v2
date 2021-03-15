@@ -249,6 +249,7 @@
                         flex-direction: row;
                         grid-row: 2;
                         height: 250px;
+                        margin-bottom: 0px;
 
                         div {
                             display: flex;
@@ -372,6 +373,14 @@
             width: 12px;
             height: 12px;
             margin-top: 20px;
+        }
+
+        .swiper-button-prev{
+            /* left: 30px; */
+        }
+
+        .swiper-button-next{
+            /* right: 30px; */
         }
         
     }

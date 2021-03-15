@@ -238,9 +238,9 @@
                             <div>
                                 <h3>Snake Game</h3>
                                 <div>
-                                    <img src="images/sky-2.jpg" alt="">
+                                    <img src="images/snake.png" alt="">
                                     <div>
-                                        <p>This site was made for a small translation business with the purpose of showcasing their services and getting contact from potential customer via a contact form or social medias. <br>
+                                        <p>This site was made for a translation business with the purpose of showcasing their services and getting contact from potential customer via a contact form or social medias. <br>
                                         </p>
                                         <p>asdasdasd</p>
                                         <a href="#" class="btn-read-more1 btn-read-more">Read more</a>
@@ -307,6 +307,8 @@
                     </div>
                     <!-- Bullets -->
                     <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </section>
 
@@ -334,12 +336,16 @@
         <script>
             var swiper = new Swiper('.swiper-container', {
             slidesPerView: 'auto',
-            spaceBetween: 70,
+            spaceBetween: 250,
             centeredSlides: true,
-            grabCursor: true,
+            grabCursor: false,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
             });
         </script>
