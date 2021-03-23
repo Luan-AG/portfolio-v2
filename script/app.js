@@ -97,33 +97,45 @@ const modalCertif = () => {
 
 modalCertif();
 
-//------------------Backside--------------------------
+//------------------Backside Slide--------------------------
 
-function backSide() {
-    const btnReadMore1 = document.querySelector('.btn-read-more1');
-    const btnBack1 = document.querySelector('.btn-back1');
-    const slide1 = document.querySelector('.slide1');
+const backSideFunc = () => {
+    const btnReadMore = document.querySelectorAll('.btn-read-more'); //array of buttons 'read more'
+    const btnBack = document.querySelectorAll('.btn-back'); //array of buttons 'back'
+    const slide = document.querySelectorAll('.backside1'); //array of slides
+    const buttonsNextPrev = document.querySelectorAll('.btn-next-prev');
+    const buttonsPagination = document.querySelector('.swiper-pagination');
     
-    btnReadMore1.addEventListener('click', () => {
-        const backSide1 = document.querySelector('.backside1');
-        backSide1.style.height = '100%';   
-    })
 
-    btnBack1.addEventListener('click', () => {
-        const backSide1 = document.querySelector('.backside1');
-        backSide1.style.height = '0%';
-    })
+    btnReadMore.forEach( (btn, index) => {
+        btn.addEventListener('click', function(){
+            slide[index].style.height = '100%';
+        });
+    });
 
-    if(!slide1.classList.contains('swiper-slide-active')){
-        const backSide1 = document.querySelector('.backside1');
-        backSide1.style.height = '0%';
-    }
+    btnBack.forEach( (btn, index) => {
+        btn.addEventListener('click', function(){
+            slide[index].style.height = '0%';
+        });
+    });
 
-
-
+    buttonsNextPrev.forEach(btn => {
+        btn.addEventListener('click', function(e){
+            slide.forEach( element => {
+                element.style.height = '0%';
+            });
+        });
+    });
+    
+    buttonsPagination.addEventListener('click', function(e){
+        slide.forEach( element => {
+            element.style.height = '0%';
+        }); 
+    });
+        
 }
 
-backSide();
+backSideFunc();
 
 //------------------Toggle Sections---------------------------------
 
