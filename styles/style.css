@@ -1194,8 +1194,8 @@ header .menu-active {
   background-color: #b3b3b3;
   overflow: hidden;
   /* hide dropdown content when height = 0px */
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 0.6s ease-out;
+  transition: 0.6s ease-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
