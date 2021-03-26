@@ -212,7 +212,9 @@ toggleSectionsDesk();
 
 const toggleUnderscore = () => {
     const navButtons = document.querySelectorAll('.nav-buttons');
-    
+    const btnContactMe = document.querySelector('.contact-me');
+    const btnLogo = document.getElementById('logo');
+
     navButtons.forEach((button) => {
         button.addEventListener('click', function(){
             if(!button.classList.contains('active')) {
@@ -225,7 +227,24 @@ const toggleUnderscore = () => {
             }
         })
     })
+
+    btnContactMe.addEventListener('click', function(){
+        navButtons.forEach((btn) => {
+            btn.classList.remove('active');
+        })
+        navButtons[3].classList.toggle('active');
+    })
+
+    btnLogo.addEventListener('click', function(){
+        navButtons.forEach((btn) => {
+            btn.classList.remove('active');
+        })
+        navButtons[0].classList.toggle('active');
+    })
+
+
 }
 
 toggleUnderscore();
+
 
