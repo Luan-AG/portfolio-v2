@@ -1,4 +1,4 @@
-//------------------Menu Dropdown--------------------------------- Done!
+//------------------Menu Dropdown---------------------------------
 
 const dropdownMenu = () => {
     const burger = document.querySelector(".hamburger");
@@ -13,7 +13,7 @@ const dropdownMenu = () => {
 }
 dropdownMenu();
 
-//------------------Modal Download Resume Mobile--------------------------------- Done!
+//------------------Modal Download Resume Mobile---------------------------------
 
 const modalResume = () => {
     const modalDownload = document.querySelector('.modal-download');
@@ -42,7 +42,7 @@ const modalResume = () => {
 
 modalResume();
 
-//------------------Modal Download Resume Desktop--------------------------------- Done!
+//------------------Modal Download Resume Desktop---------------------------------
 const modalResumeDesktop = () => {
     const modalDownload = document.querySelector('.modal-download');
     const fileBtn = document.querySelector('.resume-icon-desktop');
@@ -67,7 +67,7 @@ const modalResumeDesktop = () => {
 
 modalResumeDesktop();
 
-//------------------Modal Certificates--------------------------------- Done!
+//------------------Modal Certificates--------------------------------- 
 
 const modalCertif = () => {
     const modals = document.querySelectorAll('.modal');
@@ -91,12 +91,12 @@ const modalCertif = () => {
 
 modalCertif();
 
-//------------------Backside Slide-------------------------- Done!
+//------------------Backside Slide-------------------------- 
 
 const backSideFunc = () => {
-    const btnReadMore = document.querySelectorAll('.btn-read-more'); //array of buttons 'read more'
-    const btnBack = document.querySelectorAll('.btn-back'); //array of buttons 'back'
-    const slide = document.querySelectorAll('.backside1'); //array of slides
+    const btnReadMore = document.querySelectorAll('.btn-read-more'); 
+    const btnBack = document.querySelectorAll('.btn-back'); 
+    const slide = document.querySelectorAll('.backside1'); 
     const buttonsNextPrev = document.querySelectorAll('.btn-next-prev');
     const buttonsPagination = document.querySelector('.swiper-pagination');
 
@@ -164,8 +164,8 @@ const toggleSections = () => {
             sec.classList.remove('section-in');
         })
         const sectionNumber = sections[3];
-        sectionNumber.classList.toggle('section-out'); //makes visibility 100%
-        sectionNumber.classList.toggle('section-in'); // translate in
+        sectionNumber.classList.toggle('section-out'); 
+        sectionNumber.classList.toggle('section-in'); 
         burger.classList.remove('hamburger-active');
         contentMenu.classList.remove('menu-active');
     })
@@ -176,8 +176,8 @@ const toggleSections = () => {
             sec.classList.remove('section-in');
         })
         const sectionNumber = sections[0];
-        sectionNumber.classList.toggle('section-out'); //makes visibility 100%
-        sectionNumber.classList.toggle('section-in'); // translate in
+        sectionNumber.classList.toggle('section-out');
+        sectionNumber.classList.toggle('section-in'); 
         burger.classList.remove('hamburger-active');
         contentMenu.classList.remove('menu-active');
     })
@@ -186,7 +186,7 @@ const toggleSections = () => {
 
 toggleSections();
 
-//------------------Toggle Sections Desktop--------------------------------- Done!
+//------------------Toggle Sections Desktop--------------------------------- 
 
 const toggleSectionsDesk = () => {
     
@@ -200,15 +200,15 @@ const toggleSectionsDesk = () => {
                 sec.classList.remove('section-in');
             })
             const sectionNumber = sections[index];
-            sectionNumber.classList.toggle('section-out'); //makes visibility 100%
-            sectionNumber.classList.toggle('section-in'); // translate in
+            sectionNumber.classList.toggle('section-out');
+            sectionNumber.classList.toggle('section-in');
         });
     });
 } 
 
 toggleSectionsDesk();
 
-//------------------Toggle Underscore Desktop--------------------------------- Done!
+//------------------Toggle Underscore Desktop---------------------------------
 
 const toggleUnderscore = () => {
     const navButtons = document.querySelectorAll('.nav-buttons');

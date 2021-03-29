@@ -2,7 +2,7 @@
 
 $bodyBackground: #F3f3f3;
 $fontColor: #3c3c3c;
-$navbar: #d8d8d8; /* #E3E3E3 #ababab*/
+$navbar: #d8d8d8; 
 $navdesktop: #c7c7c7;
 $blueUnderscore:#22A0E7;
 $blueHover:#0090e4;
@@ -24,11 +24,6 @@ body {
     background-color: $bodyBackground;
     overflow: hidden;
     z-index: -10;  
-    /* background: url(../images/sea_shore.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    */
 }
 
 main {
@@ -38,7 +33,7 @@ main {
     height: 100vh;
     width: 100%;
     border-radius: 10px;
-    /* z-index: -1; */
+   
 }
 
 .underscore {
@@ -63,15 +58,7 @@ main {
 
 @media only screen and (min-width: 900px) {
 
-  body {
-    /* background-image: linear-gradient(to bottom right, #7ac3eca8, #244e66); */
-    /* background-image: url(/images/backgeo.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
-    
-  }
- 
+  
   .card-desktop {
     background-color: $navbar;
     width: 80vw;
@@ -84,9 +71,7 @@ main {
     transform: translate(-50%, -50%);
     border-radius: 10px;
     box-shadow: 0px 0px 20px 5px rgba(0,0,0,.3);
-    /* visibility: hidden;
-    opacity: 0;
-    animation: delay 1.2s ease 2.2s forwards;  */
+   
 
     main {
       width: 100%;
