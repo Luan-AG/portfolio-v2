@@ -1031,10 +1031,10 @@ header .menu-active {
   .section-skills p {
     font-size: 16px;
   }
-  .section-skills .tech-logos .logo-box img {
+  .section-skills .tech-logos .logo-box img, .section-skills .tech-logos-familiar .logo-box img {
     height: 65px;
   }
-  .section-skills .tech-logos .logo-box p {
+  .section-skills .tech-logos .logo-box p, .section-skills .tech-logos-familiar .logo-box p {
     font-size: 16px;
   }
 }
@@ -1479,6 +1479,9 @@ header .menu-active {
     height: 80%;
     background-color: #c7c7c7;
     border-radius: 10px;
+  }
+  .section-work .swiper-container .swiper-wrapper .swiper-slide img {
+    width: auto;
   }
   .section-work .swiper-container .swiper-wrapper .swiper-slide div {
     height: 92%;

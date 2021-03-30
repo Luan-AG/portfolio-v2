@@ -310,7 +310,11 @@
                 height: 80%;
                 background-color: $navdesktop;
                 border-radius: 10px;
-                                
+                     
+                img {
+                    width: auto;
+                }
+
                 div {
 
                     height: 92%;
