@@ -648,8 +648,8 @@ header .menu-active {
   max-width: 240px;
   border-radius: 50%;
   justify-self: flex-start;
-  -webkit-box-shadow: 0px 0px 20px black;
-          box-shadow: 0px 0px 20px black;
+  -webkit-box-shadow: 0px 0px 2px black;
+          box-shadow: 0px 0px 2px black;
   visibility: hidden;
   opacity: 0;
   -webkit-animation: delay 1.2s ease 2.6s forwards;
@@ -769,8 +769,6 @@ header .menu-active {
     max-width: 540px;
     border-radius: 50%;
     justify-self: flex-start;
-    -webkit-box-shadow: 0px 0px 20px black;
-            box-shadow: 0px 0px 20px black;
     visibility: hidden;
     opacity: 0;
     -webkit-animation: delay 1.2s ease 2.6s forwards;
