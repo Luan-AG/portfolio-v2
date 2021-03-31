@@ -1233,6 +1233,7 @@ header .menu-active {
   padding: 0 15px;
   font-size: 3vw;
   line-height: 1rem;
+  text-align: justify;
 }
 
 .section-work .swiper-container .swiper-wrapper .swiper-slide div div .btn-read-more {
@@ -1542,7 +1543,6 @@ header .menu-active {
     padding: 5px 15px;
     font-size: 12px;
     margin: 0;
-    text-align: justify;
   }
   .section-work .swiper-container .swiper-wrapper .swiper-slide div .btn-swiper-slide-desktop {
     display: block;
