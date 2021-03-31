@@ -1634,9 +1634,11 @@ header .menu-active {
   }
   .section-work .swiper-container .swiper-button-prev {
     display: block;
+    top: 40%;
   }
   .section-work .swiper-container .swiper-button-next {
     display: block;
+    top: 40%;
   }
 }
 
